@@ -11,6 +11,7 @@ body {
     width: 100%;
     max-width: 1100px;
     margin: 0px auto;
+    text-align: justify;
 }
 
 
@@ -133,7 +134,116 @@ p{
 
 /* F O O T E R */
 
-.footer {   
+.footer { 
+  width: 100%;  
     background: #1a2028;
     height: 200px;
+}
+.textbox{
+display: inline-block;
+max-height: 100px;
+padding-right: 10px;
+width: 340px;
+color: white;
+overflow: hidden;
+}
+.footerlinks a{
+    text-align:center;
+    float:right;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top:3px;
+}
+.footerlinks a:hover{
+  color: #0071bc;
+}
+a.disabled{
+  float: left;
+  text-align: left;
+  cursor: context-menu;
+  pointer-events: none;
+}
+a.disabled:hover{
+  color: white;
+}
+p.advert{
+  padding: none;
+}
+.advertisingbox{
+  display: inline-block;
+  width: 196px;
+  height: 70px;
+  padding-right: 10px;
+  max-height: 70px;
+  overflow: hidden;
+  background-color: #0071bc;
+}
+
+
+p.box{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.textboxes{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.advertisingboxes{
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1058px) {
+  .footer .textbox.max {
+    display: none;
+  }
+  .footer .advertisingbox.max {
+    display: none;
+  }
+
+
+.textboxes{
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.advertisingboxes{
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 840px) {
+  .footer .advertisingbox.max2 {
+    display: none;
+  }
+  @media screen and (max-width: 625px) {
+    .footer .textbox.max2 {
+      display: none;
+    }
+    .footer .advertisingbox.max3 {
+      display: none;
+    }
+    .textboxes{
+      justify-content: center;
+    }
+    @media screen and (max-width: 420px) {
+      .footer .advertisingbox.max4 {
+        display: none;
+      }
+      .advertisingboxes{
+        justify-content: center;
+      }
+    }
+  }
+}
 }
