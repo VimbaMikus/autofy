@@ -137,15 +137,26 @@ p{
 .footer { 
   width: 100%;  
     background: #1a2028;
-    height: 200px;
+    height: 310px;
 }
+.footer .insideContainer{
+  width: 100%;
+    max-width: 1100px;
+    margin: 0px auto;
+    text-align: justify;
+}
+.footer .contentContainer{
+padding-left:20px;
+padding-right:20px;
+}
+
 .textbox{
 display: inline-block;
 max-height: 100px;
-padding-right: 10px;
 width: 340px;
 color: white;
 overflow: hidden;
+
 }
 .footerlinks a{
     text-align:center;
@@ -174,23 +185,24 @@ p.advert{
 }
 .advertisingbox{
   display: inline-block;
-  width: 196px;
-  height: 70px;
-  padding-right: 10px;
-  max-height: 70px;
+  width: 520px;
+  height: 110px;
+  
+  max-height: 110px;
   overflow: hidden;
   background-color: #0071bc;
 }
 
 
 p.box{
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .textboxes{
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  padding-top:20px;
 }
 .advertisingboxes{
   width: 100%;
@@ -198,52 +210,92 @@ p.box{
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  padding-bottom: 0px;
+  padding-top: 20px;
 }
-@media screen and (max-width: 1058px) {
-  .footer .textbox.max {
+.copyright{
+  display: none;
+}
+@media screen and (max-width: 1099px) {
+  /*.footer .textbox.max {
     display: none;
   }
   .footer .advertisingbox.max {
     display: none;
-  }
+  }*/
 
-
+.footer{
+  height: 610px;
+}
 .textboxes{
   width: 100%;
   display: inline-block;
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
+  flex-direction: column;
+  /*justify-content: center;
+  justify-content: space-between;*/
+  padding-top:20px;
+  height: 250px;
 }
+.textbox{
+  width: 100%;
+}
+
 .advertisingboxes{
   width: 100%;
   display: inline-block;
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  
 }
-@media screen and (max-width: 840px) {
-  .footer .advertisingbox.max2 {
-    display: none;
+.advertisingbox{
+  padding-right:10px;
+  padding-left:10px;
+  margin-bottom: 20px;
+}
+
+.insideContainer{
+  width: 100%;
+    width: 1060px;
+    margin: 0px auto;
+    text-align: justify;
+}
+@media screen and (max-width: 960px) {
+  .advertisingbox{
+    padding-right:20px;
+    padding-left:20px;
   }
-  @media screen and (max-width: 625px) {
-    .footer .textbox.max2 {
+  @media screen and (max-width: 600px) {
+    .advertisingbox{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .advertisingContainer{
+      padding-left:20px;
+      padding-right:20px;
+    }
+    .footerlinks{
+      display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+    }
+    a.disabled{
       display: none;
     }
-    .footer .advertisingbox.max3 {
-      display: none;
+    .footer{
+      height: 680px;
     }
-    .textboxes{
-      justify-content: center;
+    .copyright{
+      max-width: 100%;
+      padding-top: 20px;
+      color:white;
+      display:inline;
+      text-align: center;
+
     }
-    @media screen and (max-width: 420px) {
-      .footer .advertisingbox.max4 {
-        display: none;
-      }
-      .advertisingboxes{
-        justify-content: center;
-      }
-    }
+
   }
 }
 }
