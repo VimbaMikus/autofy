@@ -110,6 +110,7 @@ body {
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+    min-height: calc(100vh - 70px);
 }
 
 h1{
@@ -129,8 +130,48 @@ p{
     padding-bottom: 0px;
 }
 
+.hero{
+  text-align: center;
+  width: 100%;
+  height:150px;
+}
+.hero h1{
+  padding-top:70px;
+}
 
+/* FIND */
 
+.carboxes{
+  padding-left:250px;
+  width: 100%;
+}
+.carbox{
+  width:350px;
+  height:400px;
+  display: inline-block;
+  background-color:rgb(206, 213, 222);
+  border-radius: 25px;
+  margin-right:15px;
+  margin-left:30px;
+}
+.carPicture{
+  height:170px;
+}
+.carCriteria{
+  height:180px;
+  display:inline-block;
+}
+.carCriteria p{
+  font-weight: bold;
+  padding-bottom:20px;
+}
+.Criteria{
+  width: 100%;
+  padding-right:20px;
+}
+tr{
+  height:20px;
+}
 
 /* F O O T E R */
 
