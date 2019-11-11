@@ -158,21 +158,38 @@ p{
   height:170px;
 }
 .carCriteria{
+  padding-left:20px;
   height:180px;
   display:inline-block;
-}
-.carCriteria p{
-  font-weight: bold;
-  padding-bottom:20px;
-}
-.Criteria{
-  width: 100%;
-  padding-right:20px;
-}
-tr{
-  height:20px;
+  margin-left:30px;
 }
 
+.criteria{
+  width:100%;
+}
+
+.title p{
+  font-weight: bold;
+}
+.buttonsBlock{
+  background-color: #1a2028;
+  width: 100%;
+  height: 50px;
+  border-bottom-right-radius:25px;
+  border-bottom-left-radius:25px;
+  justify-content: center;
+  display: flex;
+}
+
+.details{
+  background-color:#0071bc;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+}
 /* F O O T E R */
 
 .footer { 
