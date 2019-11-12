@@ -139,7 +139,7 @@ p{
   padding-top:70px;
 }
 
-/* FIND */
+/* F I N D */
 
 .carboxes{
   /*padding-left:250px;*/
@@ -219,6 +219,86 @@ p{
   padding-left: 25px;
   font-weight: bold;
   padding-top:10px;
+}
+
+
+
+
+
+
+/* H O M E P A G E */
+
+.heroHome{
+  width: 100%;
+  height: auto;
+  margin-bottom: 70vh;
+}
+.heroContainer {
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+}
+.whatIs{
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  background-image: url("whatIs.jpg");
+  /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.whatIsText{
+  padding-top:2vw;
+  padding-left:1vw;
+  padding-right:1vw;
+}
+.whatIsText h2{
+  margin-top:0;
+  text-align:center;
+}
+.whatIsText h3{
+  margin-bottom: 0;
+  padding-left:1vw;
+}
+.buttonBlock{
+  background-color: #1a2028;
+  width: 100%;
+  height: 80px;
+  border-bottom-right-radius:25px;
+  border-bottom-left-radius:25px;
+  justify-content: center;
+  display: flex;
+  margin-top:60px;
+}
+
+.try{
+  background-color:#0071bc;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  width: 130px;
+  height: 30px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.more{
+  background-color:#1a2028;
+  border-radius: 25px;
+  color: white;
+  width: 130px;
+  height: 30px;
+  margin-top: 25px;
+  margin-right: 20px;
 }
 /* F O O T E R */
 
