@@ -142,7 +142,7 @@ p{
 /* FIND */
 
 .carboxes{
-  padding-left:250px;
+  /*padding-left:250px;*/
   width: 100%;
 }
 .carbox{
@@ -152,7 +152,7 @@ p{
   background-color:rgb(206, 213, 222);
   border-radius: 25px;
   margin-right:15px;
-  margin-left:30px;
+  
 }
 .carPicture{
   height:170px;
@@ -196,6 +196,7 @@ p{
   width: 100%;  
     background: #1a2028;
     height: 310px;
+    overflow: hidden;
 }
 .footer .insideContainer{
   width: 100%;
