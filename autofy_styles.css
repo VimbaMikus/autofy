@@ -143,7 +143,11 @@ p{
 
 .carboxes{
   /*padding-left:250px;*/
-  width: 100%;
+  display: inline-block;
+  width: 70%;
+  border:none;
+    margin-right: 0px;
+    margin-left: auto;
 }
 .carbox{
   width:350px;
@@ -151,8 +155,10 @@ p{
   display: inline-block;
   background-color:rgb(206, 213, 222);
   border-radius: 25px;
-  margin-right:15px;
   
+  margin-left:50px;
+  justify-self: right;
+  margin-bottom:20px;
 }
 .carPicture{
   height:170px;
@@ -189,6 +195,30 @@ p{
   width: 130px;
   height: 30px;
   margin-top: 10px;
+}
+.filter{
+  background-color: rgb(206, 213, 222);
+  width: 220px;
+  float: left;
+  top: 200; 
+  left: 200;
+  overflow-x: hidden;
+  height: calc(100vh + 23.5vh);
+  /*height: auto !important;*/
+  /*min-height: calc(100vh + 162px);*/
+
+}
+
+.selectBox{
+  background-color: white;
+  border-radius: 25px;
+  width: 180px;
+  margin-left: 20px;
+}
+.filter p{
+  padding-left: 25px;
+  font-weight: bold;
+  padding-top:10px;
 }
 /* F O O T E R */
 
@@ -276,12 +306,6 @@ p.box{
   display: none;
 }
 @media screen and (max-width: 1099px) {
-  /*.footer .textbox.max {
-    display: none;
-  }
-  .footer .advertisingbox.max {
-    display: none;
-  }*/
 
 .footer{
   height: 610px;
@@ -291,8 +315,6 @@ p.box{
   display: inline-block;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;
-  justify-content: space-between;*/
   padding-top:20px;
   height: 250px;
 }
