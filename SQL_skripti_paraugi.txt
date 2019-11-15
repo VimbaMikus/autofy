@@ -1,0 +1,16 @@
+// Paraugs kā izveidot tabulu
+
+create table cars (
+    pk_cars int(5) not null PRIMARY KEY AUTO_INCREMENT,
+    brand varchar(128) not null,
+    model varchar(128) not null,
+    caryear int(4) not null,
+    bodysytle varchar(128) not null,
+    fueltype varchar(128) not null,
+    transmission varchar(128) not null);
+/
+	
+//Paraugs kā insertot datus tabulā
+	
+INSERT INTO `cars`(`pk_cars`, `brand`, `model`, `caryear`, `bodysytle`, `fueltype`, `transmission`) VALUES (1,"Audi","A4",1995,"Van","Diesel","Manual");
+/
