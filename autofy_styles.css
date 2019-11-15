@@ -28,6 +28,7 @@ body {
     background: #1a2028;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 
@@ -162,6 +163,9 @@ p{
 }
 .carPicture{
   height:170px;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
 }
 .carCriteria{
   padding-left:20px;
@@ -231,6 +235,7 @@ p{
 .heroHome{
   width: 100%;
   height: auto;
+  padding-top: 50px;
   margin-bottom: 70vh;
 }
 .heroContainer {
@@ -239,10 +244,10 @@ p{
 }
 .centered {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4vw;
+  font-size: 5vw;
 }
 .whatIs{
   width: 500px;
@@ -335,7 +340,7 @@ overflow: hidden;
     text-decoration: none;
     font-size: 15px;
     padding-left: 15px;
-    padding-top:3px;
+    padding-top:0px;
 }
 .footerlinks a:hover{
   color: #0071bc;
@@ -345,6 +350,7 @@ a.disabled{
   text-align: left;
   cursor: context-menu;
   pointer-events: none;
+  padding-left: 0px;
 }
 a.disabled:hover{
   color: white;
@@ -359,7 +365,6 @@ p.advert{
   
   max-height: 110px;
   overflow: hidden;
-  background-color: #0071bc;
 }
 
 
@@ -379,7 +384,7 @@ p.box{
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
 .copyright{
