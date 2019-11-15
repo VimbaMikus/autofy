@@ -21,15 +21,6 @@
         <script src="https://kit.fontawesome.com/4b81e03c47.js" crossorigin="anonymous"></script>
     </head>
     <body>
-		<?php
-	
-		$servername = "localhost";
-		$username = "root";
-		$password = "";
-		$dbName = "autofy";
-
-		$conn =  mysqli_connect($servername, $username, $password, $dbName);
-	?>
             
         <div class="nav_bar" id="topNav">
             <div class="container">
@@ -109,7 +100,7 @@
 											if ($result->num_rows > 0) 
 											{
 												while($row = $result->fetch_assoc()){ 
-													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=350 height=150/>';
+													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
 												}
 											}
 
@@ -294,11 +285,11 @@
             <div class="advertisingContainer">
             <div class="advertisingboxes">
                 <div class="advertisingbox">
-                    <p class="advert">Advertising Banner</p>
+                    <img src="adv_banner1.png" width="100%" />
                 </div>
                 <div class="advertisingbox">
-                    <p class="advert">Advertising Banner</p>
-                </div>               
+                    <img src="adv_banner2.png" width="100%"/>
+                </div>             
             </div>
         </div>
             <div class="footerlinks">
