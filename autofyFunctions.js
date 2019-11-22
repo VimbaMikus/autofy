@@ -19,3 +19,9 @@ function responsiveNav() {
       navbar.classList.remove("sticky");
     }
   }
+
+  function bgColor(){
+    var augstums = document.getElementsByClassName("content").style.height;
+    augstums = "2000px";
+
+  }
