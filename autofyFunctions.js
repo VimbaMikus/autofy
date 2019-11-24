@@ -20,8 +20,32 @@ function responsiveNav() {
     }
   }
 
-  function bgColor(){
-    var augstums = document.getElementsByClassName("content").style.height;
-    augstums = "2000px";
+  
+  var elem1 = document.getElementById("Colorbg2");
+  var filter = parseInt(window.getComputedStyle(elem1).height);
+  
 
-  }
+  var elem2 = document.getElementById("Colorbg3");
+  var carboxes = parseInt(window.getComputedStyle(elem2).height);
+
+var content=document.getElementById('Colorbg').style.height;
+var container=document.getElementById('container').style.height;
+
+
+
+if(filter>carboxes)
+{
+  var a=0;
+  a = filter + 230;
+document.getElementById('container').style.height=a + "px";
+document.getElementById('Colorbg').style.height=a + "px";
+}
+else 
+{
+  var
+  b=0;
+  b = carboxes + 230;
+  document.getElementById('container').style.height=b + "px";
+document.getElementById('Colorbg').style.height=b + "px";
+}
+

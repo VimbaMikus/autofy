@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/4b81e03c47.js" crossorigin="anonymous"></script>
     </head>
-    <body onload="bgColor()";>
+    <body>
         <div class="nav_bar" id="topNav">
             <div class="container">
             <img src="autofylogo.png" class="logo" />
@@ -41,7 +41,7 @@
 
 
 
-        <div class="container">
+        <div class="container" id="container">
                 <div class="content" id="Colorbg">
                     <div class="hero">
                         <img src="hero2.png" class="heroFind"/>
@@ -49,6 +49,8 @@
                     </div>
                     <div class="filter" id="Colorbg2">
                             <p>Brand</p>
+                            <!--<p id="pixels"></p>
+                            <button onclick="pixeltest()">Click me</button>-->
                             <select class="selectBox">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Audi">Audi</option>
@@ -88,50 +90,24 @@
                                     <option value="Manual">Manual gearbox</option>
                                     <option value="Automatic">Automatic transmission</option>
                             </select>
-
-
-
-
-
-
-
-                            <p>Brand</p>
+                            <p>Colour</p>
                             <select class="selectBox">
                                     <option disabled selected value="">Choose your option</option>
-                                    <option value="Audi">Audi</option>
-                                    <option value="Volkswagen">Volkswagen</option>
-                                    <option value="Opel">Opel</option>
-                                    <option value="BMW">BMW</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Black">Black</option>
                             </select>
-                            <p>Year</p>
-                            <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2018">2018</option>
-                            </select>
-                            <p>Body Style</p>
-                            <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Cabriolet">Cabriolet</option>
-                                    <option value="Coupe">Coupe</option>
-                                    <option value="EstateCar">Estate Car</option>
-                                    <option value="SUV">SUV</option>
-                                    <option value="Saloon">Saloon</option>
-                                    <option value="Van">Van</option>
-                                    <option value="SmallCar">Small Car</option>
-                            </select>
-                            <p>Fuel Type</p>
-                            <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Petrol">Petrol</option>
-                                    <option value="Diesel">Diesel</option>
-                                    <option value="LPG">LPG</option>
-                                    <option value="Hybrid">Hybrid</option>
-                                    <option value="Electric">Electric</option>
-                            </select>
+                            <button  type="button" class="ApplyButton">Apply</button>
+
+
+
+
+
+                            
                           
                     </div>
-                    <table class="carboxes">
+                    <table class="carboxes" id="Colorbg3">
                         <tr>
                             <td width="40%">
                          <div class="carbox">
@@ -291,8 +267,8 @@
 
 
 
-
-                        <td width="40%">
+<!--NEW CAR COLUMN-->
+                        <!--<td width="40%">
                          <div class="carbox">
                             <div class="carPicture" id="carPicture">
 											<?php			
@@ -445,7 +421,7 @@
                                 <button type="button" class="details">Details</button>
                             </div>
                         </div>
-                        </td>
+                        </td>-->
 
 </tr>
 
@@ -460,6 +436,9 @@
 
 
 
+
+									
+<!--NEW CAR ROW-->                        
 <!--<tr>
                             <td width="40%">
                          <div class="carbox">
@@ -777,9 +756,28 @@
 
 </tr>-->
 
-									
-                        
-                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </table>
                 </div>
             </div>
