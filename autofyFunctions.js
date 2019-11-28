@@ -21,6 +21,7 @@ function responsiveNav() {
   }
 
   
+  
   var elem1 = document.getElementById("Colorbg2");
   var filter = parseInt(window.getComputedStyle(elem1).height);
   
@@ -48,4 +49,23 @@ else
   document.getElementById('container').style.height=b + "px";
 document.getElementById('Colorbg').style.height=b + "px";
 }
+
+
+function chooseButton1(_this) {
+  if(document.getElementById('choose2').style.backgroundColor = "#8a8a8a"){
+  _this.style.backgroundColor = "#8a8a8a";
+  document.getElementById('choose2').style.backgroundColor = "#0071bc";
+  }else{
+    _this.style.backgroundColor = "#8a8a8a";
+  }
+}
+function chooseButton2(_this) {
+  if(document.getElementById('choose1').style.backgroundColor = "#8a8a8a"){
+  _this.style.backgroundColor = "#8a8a8a";
+  document.getElementById('choose1').style.backgroundColor = "#0071bc";
+  }else{
+    _this.style.backgroundColor = "#8a8a8a";
+  }
+}
+
 
