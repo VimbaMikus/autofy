@@ -277,10 +277,8 @@ p{
   height: 500px;
   border-radius: 25px;
   background-color:#dee1ec;
-  /*filter: blur(8px);
-  -webkit-filter: blur(8px);*/
   position: absolute;
-  top: 100%;
+  top:100%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
@@ -399,6 +397,18 @@ p{
   height: 30px;
   margin-top: 10px;
   outline: none;
+}
+.CompareButton{
+  background-color:#0071bc;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  outline: none;
+  margin-left:43%;
+  margin-bottom:20px;
 }
 
 
