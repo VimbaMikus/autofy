@@ -45,7 +45,6 @@
                 <div class="content" id="Colorbg">
                     <div class="hero">
                         <img src="images/hero2.png" class="heroFind"/>
-                    <div class="centeredFind">A place where you can find your dream car</div>
                     </div>
                     <div class="filter" id="Colorbg2">
                             <p>Brand</p>
