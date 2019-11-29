@@ -49,22 +49,23 @@ else
   document.getElementById('container').style.height=b + "px";
 document.getElementById('Colorbg').style.height=b + "px";
 }
-
+document.getElementById('choose2').style.backgroundColor = "#8a8a8a";
+document.getElementById('choose1').style.backgroundColor = "#8a8a8a";
 
 function chooseButton1(_this) {
-  if(document.getElementById('choose2').style.backgroundColor = "#8a8a8a"){
-  _this.style.backgroundColor = "#8a8a8a";
-  document.getElementById('choose2').style.backgroundColor = "#0071bc";
+  if(document.getElementById('choose2').style.backgroundColor = "#0071bc"){
+  _this.style.backgroundColor = "#0071bc";
+  document.getElementById('choose2').style.backgroundColor = "#8a8a8a";
   }else{
-    _this.style.backgroundColor = "#8a8a8a";
+    _this.style.backgroundColor = "#0071bc";
   }
 }
 function chooseButton2(_this) {
-  if(document.getElementById('choose1').style.backgroundColor = "#8a8a8a"){
-  _this.style.backgroundColor = "#8a8a8a";
-  document.getElementById('choose1').style.backgroundColor = "#0071bc";
+  if(document.getElementById('choose1').style.backgroundColor = "#0071bc"){
+  _this.style.backgroundColor = "#0071bc";
+  document.getElementById('choose1').style.backgroundColor = "#8a8a8a";
   }else{
-    _this.style.backgroundColor = "#8a8a8a";
+    _this.style.backgroundColor = "#0071bc";
   }
 }
 

@@ -26,8 +26,8 @@
             <img src="images/autofylogo.png" class="logo" />
             <a href="autofy.html">Home</a>
             <a href="find.php">Find</a>
-            <a class ="active firstElement" href="compare-menu.php">Compare</a>
-            <a href="history.php">History</a>
+            <a href="compare-menu.php">Compare</a>
+            <a class ="active firstElement" href="history.php">History</a>
             <a href="#information">About Us</a>
             <a href="#login" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
@@ -41,21 +41,21 @@
 
 
 
-        <div class="containerResult">
-                <div class="contentResult">
+        <div class="containerHistory">
+                <div class="contentHistory">
                     <div class="hero">
                         <img src="images/hero2.png" class="heroFind"/>
                     <div class="centeredFind">Our <strong>comparison tool</strong> will help to<br /> choose car that suits you best</div>
                     </div>                   
  
-                <table class="carboxesResult">
+                <table class="carboxesHistory">
                     <tr>
                     <td width="100%">
-                    <div class="carboxResult">
-                        <table class="carboxesResultInside">
+                    <div class="carboxHistory">
+                        <table class="carboxesHistoryInside">
                             <tr>
                         <td width="50%">
-                            <div class="carPictureResult" id="carPicture">
+                            <div class="carPictureHistory" id="carPicture">
                                 <img src="images/audi_a4_large2.png" width="80%"/>
 											<?php /*			
 											$sql = "SELECT iamge from cars where brand = 'Audi'";
@@ -71,8 +71,8 @@
                             </div>
                         </td>
                         <td width="50%">
-                            <div class="carCriteriaResult" id="carCriteria">
-                            <table  class="criteriaResult">										
+                            <div class="carCriteriaHistory" id="carCriteria">
+                            <table  class="criteriaHistory">										
                             <tr height="20px">
                                 <td width="40%">
                                         <div class="title"><p>Brand</p></div>
@@ -199,7 +199,7 @@
                                     </td>
                             </tr>
                             <tr>
-                                <td colspan="3"><button type="button" class="saveResult" onclick="window.location.href='history.php'">Save</button>  </td>
+                                <td colspan="3"><button type="button" class="deleteHistory">Delete</button>  </td>
                                 <td></td>
                                 <td></td>
 
@@ -211,9 +211,10 @@
                         </td>
                     </div>
                     </td>
-                    </tr> 
+                    </tr>
                     
                 
+                    
                 </table>
                 </div>
             </div>
