@@ -23,11 +23,11 @@
     <body>
         <div class="nav_bar" id="topNav">
             <div class="container">
-            <img src="autofylogo.png" class="logo" />
+            <img src="images/autofylogo.png" class="logo" />
             <a href="autofy.html">Home</a>
             <a href="find.php">Find</a>
             <a class ="active firstElement" href="compare-menu.php">Compare</a>
-            <a href="#history">History</a>
+            <a href="history.php">History</a>
             <a href="#information">About Us</a>
             <a href="#login" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
@@ -44,7 +44,7 @@
         <div class="container" id="container">
                 <div class="content">
                     <div class="hero">
-                        <img src="hero2.png" class="heroFind"/>
+                        <img src="images/hero2.png" class="heroFind"/>
                     <div class="centeredFind">Our <strong>comparison tool</strong> will help to<br /> choose car that suits you best</div>
                     </div> 
                     
@@ -138,10 +138,10 @@
             <div class="advertisingContainer">
             <div class="advertisingboxes">
                 <div class="advertisingbox">
-                    <img src="adv_banner1.png" width="100%" />
+                    <img src="images/adv_banner1.png" width="100%" />
                 </div>
                 <div class="advertisingbox">
-                    <img src="adv_banner2.png" width="100%"/>
+                    <img src="images/adv_banner2.png" width="100%"/>
                 </div>             
             </div>
         </div>

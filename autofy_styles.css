@@ -389,7 +389,7 @@ p{
 
 
 .choose{
-  background-color:#0071bc;
+  background-color:"#8a8a8a";
   border: none;
   border-radius: 25px;
   color: white;
@@ -411,7 +411,130 @@ p{
   margin-bottom:20px;
 }
 
+/* C O M P A R E  R E S U L T */
+.carboxesResult{
+  display: inline-block;
+  width: 70%;
+  border:none;
+  padding-top: 30px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.carboxResult{
+  width:900px;
+  height:400px;
+  display: inline-block;
+  background-color:rgb(206, 213, 222);
+  border-radius: 25px;
+  justify-self: right;
+  margin-left: 11%;
+}
+.carPictureResult{
+  height:170px;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+.carCriteriaResult{
+  padding-left:20px;
+  height:180px;
+  display:inline-block;
+  margin-left:30px;
+}
 
+.criteriaResult{
+  width:100%;
+}
+
+.carboxesResultInside{
+  height: 400px;
+}
+.containerResult{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0px auto;
+  text-align: justify;
+  min-height: 650px;
+}
+.contentResult{
+  background: #ffffff;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 650px;
+}
+.saveResult{
+  background-color:#0071bc;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  width: 130px;
+  height: 30px;
+  margin-top: 15px;
+  outline: none;
+  margin-left: 30%;
+}
+/* H I S T O R Y */
+.containerHistory{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0px auto;
+  text-align: justify;
+  min-height: 650px;
+}
+.contentHistory{
+  background: #ffffff;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 650px;
+}
+.carboxesHistory{
+  display: inline-block;
+  width: 70%;
+  border:none;
+  padding-top: 30px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.carboxHistory{
+  width:900px;
+  height:400px;
+  display: inline-block;
+  background-color:rgb(206, 213, 222);
+  border-radius: 25px;
+  justify-self: right;
+  margin-left: 11%;
+}
+.carboxesHistoryInside{
+  height: 400px;
+}
+.carPictureHistory{
+  height:170px;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+.carCriteriaHistory{
+  padding-left:20px;
+  height:180px;
+  display:inline-block;
+  margin-left:30px;
+}
+.criteriaHistory{
+  width:100%;
+}
+.deleteHistory{
+  background-color:#0071bc;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  width: 130px;
+  height: 30px;
+  margin-top: 15px;
+  outline: none;
+  margin-left: 30%;
+}
 /* F O O T E R */
 
 .footer { 
