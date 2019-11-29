@@ -44,8 +44,8 @@
         <div class="containerHistory">
                 <div class="contentHistory">
                     <div class="hero">
-                        <img src="images/hero2.png" class="heroFind"/>
-                    <div class="centeredFind">Our <strong>comparison tool</strong> will help to<br /> choose car that suits you best</div>
+                        <img src="images/hero4.png" class="heroFind"/>
+                    
                     </div>                   
  
                 <table class="carboxesHistory">

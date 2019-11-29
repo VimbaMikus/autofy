@@ -55,7 +55,7 @@ document.getElementById('choose1').style.backgroundColor = "#8a8a8a";
 function chooseButton1(_this) {
   if(document.getElementById('choose2').style.backgroundColor = "#0071bc"){
   _this.style.backgroundColor = "#0071bc";
-  document.getElementById('choose2').style.backgroundColor = "#8a8a8a";
+  document.getElementById('choose2').style.backgroundColor = "#1a2028";
   }else{
     _this.style.backgroundColor = "#0071bc";
   }
@@ -63,7 +63,7 @@ function chooseButton1(_this) {
 function chooseButton2(_this) {
   if(document.getElementById('choose1').style.backgroundColor = "#0071bc"){
   _this.style.backgroundColor = "#0071bc";
-  document.getElementById('choose1').style.backgroundColor = "#8a8a8a";
+  document.getElementById('choose1').style.backgroundColor = "#1a2028";
   }else{
     _this.style.backgroundColor = "#0071bc";
   }

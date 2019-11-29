@@ -387,29 +387,52 @@ p{
 
 /* C O M P A R E*/
 
+.carboxesCompare{
+  display: inline-block;
+  width: 100%;
+  border:none;
+  padding-top: 30px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.carboxCompare{
+  width:505px;
+  height:400px;
+  display: inline-block;
+  background-color:rgb(206, 213, 222);
+  border-radius: 25px;
+  
+  margin-left:30px;
+  justify-self: right;
+  margin-bottom:50px;
+}
 
 .choose{
-  background-color:"#8a8a8a";
-  border: none;
+  background-color:#1a2028;
   border-radius: 25px;
   color: white;
   width: 130px;
   height: 30px;
   margin-top: 10px;
+  margin-right: 0px;
   outline: none;
 }
 .CompareButton{
   background-color:#0071bc;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   color: white;
-  width: 130px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   margin-top: 10px;
   outline: none;
-  margin-left:43%;
+  margin-left:44%;
   margin-bottom:20px;
+  font-size: 16px;
 }
+
+
+
 
 /* C O M P A R E  R E S U L T */
 .carboxesResult{
@@ -491,20 +514,19 @@ p{
 }
 .carboxesHistory{
   display: inline-block;
-  width: 70%;
+  width: 100%;
   border:none;
   padding-top: 30px;
-    margin-right: 0px;
-    margin-left: auto;
 }
 .carboxHistory{
-  width:900px;
+  width:1040px;
   height:400px;
   display: inline-block;
   background-color:rgb(206, 213, 222);
   border-radius: 25px;
   justify-self: right;
-  margin-left: 11%;
+  margin-left: 30px;
+
 }
 .carboxesHistoryInside{
   height: 400px;

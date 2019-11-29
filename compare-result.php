@@ -44,8 +44,8 @@
         <div class="containerResult">
                 <div class="contentResult">
                     <div class="hero">
-                        <img src="images/hero2.png" class="heroFind"/>
-                    <div class="centeredFind">Our <strong>comparison tool</strong> will help to<br /> choose car that suits you best</div>
+                        <img src="images/hero3.png" class="heroFind"/>
+                    
                     </div>                   
  
                 <table class="carboxesResult">
