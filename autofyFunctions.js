@@ -49,21 +49,32 @@ else
   document.getElementById('container').style.height=b + "px";
 document.getElementById('Colorbg').style.height=b + "px";
 }
-document.getElementById('choose2').style.backgroundColor = "#8a8a8a";
-document.getElementById('choose1').style.backgroundColor = "#8a8a8a";
+var rowCount = document.getElementById('carboxesCompare').rows.length;
 
 function chooseButton1(_this) {
-  if(document.getElementById('choose2').style.backgroundColor = "#0071bc"){
+  var par=_this.parentNode; 
+ while(par.nodeName.toLowerCase()!='tr'){ 
+  par=par.parentNode; 
+ } 
+ var rows = par.rowIndex+1;
+  var id = rows+"2";
+  if(document.getElementById('choose' + id).style.backgroundColor = "#0071bc"){
   _this.style.backgroundColor = "#0071bc";
-  document.getElementById('choose2').style.backgroundColor = "#1a2028";
+  document.getElementById('choose' + id).style.backgroundColor = "#1a2028";
   }else{
     _this.style.backgroundColor = "#0071bc";
   }
 }
 function chooseButton2(_this) {
-  if(document.getElementById('choose1').style.backgroundColor = "#0071bc"){
+  var par=_this.parentNode; 
+ while(par.nodeName.toLowerCase()!='tr'){ 
+  par=par.parentNode; 
+ } 
+ var rows = par.rowIndex+1;
+  var id = rows+"1";
+  if(document.getElementById('choose' + id).style.backgroundColor = "#0071bc"){
   _this.style.backgroundColor = "#0071bc";
-  document.getElementById('choose1').style.backgroundColor = "#1a2028";
+  document.getElementById('choose' + id).style.backgroundColor = "#1a2028";
   }else{
     _this.style.backgroundColor = "#0071bc";
   }
