@@ -6,6 +6,13 @@
 		$dbName = "autofy";
 
 		$conn =  mysqli_connect($servername, $username, $password, $dbName);
+		//Šis priekš listboxiem
+		$sqlbrand=mysqli_query($conn, "select distinct brand from cars");
+		$sqlmodel=mysqli_query($conn, "select distinct model from cars");
+		$sqlbodystyle=mysqli_query($conn, "select distinct bodysytle from cars");
+		$sqlfueltype=mysqli_query($conn, "select distinct fueltype from cars");
+		$sqltrans=mysqli_query($conn, "select distinct transmission from cars");
+		$sqlyear=mysqli_query($conn, "select distinct caryear from cars");
 		?>
  <!DOCTYPE html>
 <html>
@@ -54,53 +61,83 @@
 							<form action="" method="post">
                             <select class="selectBox" name="brand" action="dati.php">
                                     <option disabled selected value="">Choose your option</option>
-                                    <option value="Audi">Audi</option>
-                                    <option value="Volkswagen">Volkswagen</option>
-                                    <option value="Opel">Opel</option>
-                                    <option value="BMW">BMW</option>
-									
+									<?php
+									while($row=mysqli_fetch_array($sqlbrand))
+									{
+									?>
+				
+                                    <option value="<?=$row["brand"];?>"><?=$row["brand"];?></option>
+									<?php
+									}
+									?>
 							
                             </select>
 							</form>
                             <p>Year</p>
                             <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2018">2018</option>
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlyear))
+									{
+									?>
+				
+                                    <option value="<?=$row["caryear"];?>"><?=$row["caryear"];?></option>
+									<?php
+									}
+									?>
+							
                             </select>
                             <p>Body Style</p>
                             <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Cabriolet">Cabriolet</option>
-                                    <option value="Coupe">Coupe</option>
-                                    <option value="EstateCar">Estate Car</option>
-                                    <option value="SUV">SUV</option>
-                                    <option value="Saloon">Saloon</option>
-                                    <option value="Van">Van</option>
-                                    <option value="SmallCar">Small Car</option>
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlbodystyle))
+									{
+									?>
+				
+                                    <option value="<?=$row["bodysytle"];?>"><?=$row["bodysytle"];?></option>
+									<?php
+									}
+									?>
                             </select>
                             <p>Fuel Type</p>
                             <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Petrol">Petrol</option>
-                                    <option value="Diesel">Diesel</option>
-                                    <option value="LPG">LPG</option>
-                                    <option value="Hybrid">Hybrid</option>
-                                    <option value="Electric">Electric</option>
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlfueltype))
+									{
+									?>
+				
+                                    <option value="<?=$row["fueltype"];?>"><?=$row["fueltype"];?></option>
+									<?php
+									}
+									?>
                             </select>
                             <p>Transmission</p>
                             <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Manual">Manual gearbox</option>
-                                    <option value="Automatic">Automatic transmission</option>
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqltrans))
+									{
+									?>
+				
+                                    <option value="<?=$row["transmission"];?>"><?=$row["transmission"];?></option>
+									<?php
+									}
+									?>
                             </select>
-                            <p>Color</p>
+                            <p>Model</p>
                             <select class="selectBox">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Red">Red</option>
-                                    <option value="Yellow">Yellow</option>
-                                    <option value="Blue">Blue</option>
-                                    <option value="Black">Black</option>
+                                     <option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlmodel))
+									{
+									?>
+				
+                                    <option value="<?=$row["model"];?>"><?=$row["model"];?></option>
+									<?php
+									}
+									?>
                             </select>
                            <input type="submit" class="ApplyButton" name="insert" value="Apply" onclick="ApllyClick()"/>
 					</form>		
