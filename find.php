@@ -195,7 +195,7 @@
 
                 </div>
             </div>
-
+ <script src="autofyFunctions.js"></script>
 <script>
 function ApllyClick() {
      var ajax = new XMLHttpRequest();
@@ -221,7 +221,35 @@ function ApllyClick() {
                             html+="<td width='40%'>";
                          html+="<div class='carbox'>";
                             html+="<div class='carPicture' id='carPicture'>";
-							html+="<img src='audi_a4_2019.png'>";
+							if (data[a].brand === 'Audi'){
+							html+="<img src='/autofy/images/Audi_A4_2019_black_sedan.png'>";
+							}
+							if(data[a].brand === 'BMW') {
+							html+="<img src='/autofy/images/bmw_330_2019_white_wagon.png'>";	
+							}
+							if(data[a].brand === 'Lexus')
+							{
+							html+="<img src='/autofy/images/Lexus_NX_2019_white_offroad.png'>";
+							}
+							if(data[a].brand === 'Mercedes-Benz')
+							{
+							html+="<img src='/autofy/images/Mercedes-Benz_AMG-GT_2019_grey_coupe.png'>";
+							}
+							if(data[a].brand === 'Toyota')
+							{
+							html+="<img src='/autofy/images/Toyota_Corolla_2019_beige_sedan.png'>";
+							}
+							if(data[a].brand === 'Volkswagen')
+							{
+							html+="<img src='/autofy/images/Volkswagen_GTI_2019_black_Hatchback.png'>";
+							}
+							if(data[a].brand === 'Volvo')
+							{
+							html+="<img src='/autofy/images/Volvo_S90_2019_white_sedan.png'>";
+							}
+							
+							
+							
 
                             html+="</div>";
                             html+="<div class='carCriteria' id='carCriteria'>";
@@ -298,7 +326,32 @@ function ApllyClick() {
 						html +="<td width='40%'>";
                          html +="<div class='carbox'>";
                             html +="<div class='carPicture' id='carPicture'>";
-							html+="<img src='audi_a4_2019.png'>";
+							if (data[a].brand === 'Audi'){
+							html+="<img src='/autofy/images/Audi_A4_2019_black_sedan.png'>";
+							}
+							if(data[a].brand === 'BMW') {
+							html+="<img src='/autofy/images/bmw_330_2019_white_wagon.png'>";	
+							}
+							if(data[a].brand === 'Lexus')
+							{
+							html+="<img src='/autofy/images/Lexus_NX_2019_white_offroad.png'>";
+							}
+							if(data[a].brand === 'Mercedes-Benz')
+							{
+							html+="<img src='/autofy/images/Mercedes-Benz_AMG-GT_2019_grey_coupe.png'>";
+							}
+							if(data[a].brand === 'Toyota')
+							{
+							html+="<img src='/autofy/images/Toyota_Corolla_2019_beige_sedan.png'>";
+							}
+							if(data[a].brand === 'Volkswagen')
+							{
+							html+="<img src='/autofy/images/Volkswagen_GTI_2019_black_Hatchback.png'>";
+							}
+							if(data[a].brand === 'Volvo')
+							{
+							html+="<img src='/autofy/images/Volvo_S90_2019_white_sedan.png'>";
+							}
 							html +="</div>";
                             html +="<div class='carCriteria' id='carCriteria'>";
                             html +="<table  class='criteria'>";										
@@ -382,7 +435,7 @@ function ApllyClick() {
 }
 </script>
 
-    <script src="autofyFunctions.js"></script>
+   
     </body>
     
 </html>
