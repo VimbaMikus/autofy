@@ -44,10 +44,11 @@
         <div class="container" id="container">
                 <div class="content">
                     <div class="hero">
-                        <img src="images/hero3.png" class="heroFind"/>
-                    
+                        <img src="images/hero3.png" class="heroFind"/> 
                     </div> 
-                    
+                    <table class="compareBlock">
+                        <tr>
+                            <td>
                     <div class="compareMenu">
                     <h2>Choose criteria</h2>
                       <div class="compareCriteria">
@@ -103,6 +104,9 @@
                     <div class="buttonBlockCompare">
                         <button type="button" class="saveCriteria" onclick="window.location.href='compare.php'">Let's go!</button>
                     </div>
+    </td>
+                    <tr>
+    </table>
 
                 </div>
                 </div>

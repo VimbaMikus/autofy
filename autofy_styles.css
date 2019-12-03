@@ -256,15 +256,23 @@ p{
 
 /* H O M E P A G E */
 
+
+.contentHome{
+  background: #ffffff;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 1050px;
+}
 .heroHome{
   width: 100%;
   height: auto;
   padding-top: 50px;
-  margin-bottom: 70vh;
 }
-.heroContainer {
-  text-align: center;
-  color: white;
+.homeBlock{
+  position:absolute;
+  top:500px;
+  padding-left: 320px;
 }
 .centered {
   position: absolute;
@@ -278,11 +286,6 @@ p{
   height: 500px;
   border-radius: 25px;
   background-color:#dee1ec;
-  position: absolute;
-  top:100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
 }
 .whatIsText{
   padding-top:2vw;
@@ -336,11 +339,7 @@ p{
   height: 550px;
   border-radius: 25px;
   background-color:#dee1ec;
-  position: absolute;
-  top: 73%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
+  padding-top: 10px;
 }
 .compareCriteria{
  padding-left:11%;
@@ -383,7 +382,10 @@ p{
   margin-top: 15px;
   outline: none;
 }
-
+.compareBlock{
+  padding-left: 320px;
+  padding-top:30px;
+}
 
 
 /* C O M P A R E*/
