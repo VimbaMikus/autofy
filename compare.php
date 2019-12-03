@@ -24,12 +24,12 @@
         <div class="nav_bar" id="topNav">
             <div class="container">
             <img src="images/autofylogo.png" class="logo" />
-            <a href="autofy.html">Home</a>
+            <a class ="firstElement" href="autofy.html">Home</a>
             <a href="find.php">Find</a>
-            <a class ="active firstElement" href="compare-menu.php">Compare</a>
-            <a href="#history">History</a>
+            <a class ="active" href="compare-menu.php">Compare</a>
+            <a href="history.php">History</a>
             <a href="#information">About Us</a>
-            <a href="#login" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
+            <a href="signin.html" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
                 <i class="fa fa-bars"></i>
               </a>
