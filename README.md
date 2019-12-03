@@ -1,2 +1,0 @@
-# autofy
-Car comparison tool
