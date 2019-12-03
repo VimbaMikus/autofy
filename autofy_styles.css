@@ -55,6 +55,8 @@ body {
 .nav_bar a.rightSide{
     float: right;
 }
+
+
 .logo {
     float:left;
     width: 100px;
@@ -262,7 +264,7 @@ p{
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
-  min-height: 1050px;
+  min-height: 950px;
 }
 .heroHome{
   width: 100%;
@@ -271,7 +273,7 @@ p{
 }
 .homeBlock{
   position:absolute;
-  top:500px;
+  top:400px;
   padding-left: 320px;
 }
 .centered {
@@ -720,3 +722,41 @@ p.box{
   }
 }
 }
+
+/* S I G N  I N */
+.contentLogin{
+  background: #ffffff;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 1000px;
+}
+.loginBlock{
+  position:absolute;
+  top:400px;
+  padding-left: 320px;
+}
+
+.containerLoginInput {
+  padding: 16px;
+}
+.whatIsSign{
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  background-color:#dee1ec;
+}
+.whatIsTextSign{
+  padding-left:1vw;
+  padding-right:1vw;
+}
+.whatIsTextSign h2{
+  font-size:40px;
+  padding-top: 15px;
+  text-align:center;
+}
+.login{
+  display: inline-block;
+  width:200px;
+}
+
