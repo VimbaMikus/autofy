@@ -49,12 +49,10 @@
 
 
         <div class="container" id="container">
-
-                <div class="content" id="Colorbg">
+        <div class="content" id="Colorbg">
                     <div class="hero">
                         <img src="images/hero2.png" class="heroFind"/>
                     </div>
-					
                     <div class="filter" id="Colorbg2">
 					
                             <p>Brand</p>
@@ -140,61 +138,56 @@
 									?>
                             </select>
                            <input type="submit" class="ApplyButton" name="insert" value="Apply" onclick="ApllyClick()"/>
-					</form>		
-							
-
-
-
-
-
-     
-                         
+					</form>								   
                     </div>
 					
-						<table class="carboxes" id="Colorbg3">
-					<tbody id="data"></tbody>
+					<table class="carboxes" id="Colorbg3">
+					        <tbody id="data"></tbody>
                     </table>
-					
- <div class="footer">
-        <div class="insideContainer">
-            <div class="contentContainer">
-            <div class="textboxes">
-                <div class="textbox">
-                    <p class="box"><b>Title</b></p>
-                    <p class="box">Nullam in commodo dolor, at dapibus urnaccccxxxx. Phasellus eleifend at odio eu ornare. Mauris egetNullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris eget</p>
                 </div>
-                <div class="textbox">
-                        <p class="box"><b>Title</b></p>
-                        <p class="box">Nullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris egetNullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris eget</p>
-                </div>
-                <div class="textbox">
-                            <p class="box"><b>Title</b></p>
-                            <p class="box">Nullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris egetNullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris eget</p>
-                </div>
-            </div>
-            <div class="advertisingContainer">
-            <div class="advertisingboxes">
-                <div class="advertisingbox">
-                    <img src="images/adv_banner1.png" width="100%" />
-                </div>
-                <div class="advertisingbox">
-                    <img src="images/adv_banner2.png" width="100%"/>
-                </div>             
-            </div>
         </div>
-            <div class="footerlinks">
-                    <a class="disabled">© 2019 Autofy</a>
-                    <a href="#terms-of-use">Terms of use</a>
-                    <a href="#privacy-and-cookies">Privacy & Cookie Policy</a>
-                    <a href="#advertise">Advertise With Us</a>
-            </div>
-            <div class="copyright"><p>© 2019 Autofy</p></div>
-            </div>
-        </div>
-    </div>					
+        
+        
 
-                </div>
-            </div>
+                <div class="footer">
+                    <div class="insideContainer">
+                        <div class="contentContainer">
+                            <div class="textboxes">
+                                <div class="textbox">
+                                    <p class="box"><b>Title</b></p>
+                                    <p class="box">Nullam in commodo dolor, at dapibus urnaccccxxxx. Phasellus eleifend at odio eu ornare. Mauris egetNullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris eget</p>
+                                </div>
+                                <div class="textbox">
+                                        <p class="box"><b>Title</b></p>
+                                        <p class="box">Nullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris egetNullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris eget</p>
+                                </div>
+                                <div class="textbox">
+                                            <p class="box"><b>Title</b></p>
+                                            <p class="box">Nullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris egetNullam in commodo dolor, at dapibus urna. Phasellus eleifend at odio eu ornare. Mauris eget</p>
+                                </div>
+                            </div>
+                            <div class="advertisingContainer">
+                                <div class="advertisingboxes">
+                                    <div class="advertisingbox">
+                                        <img src="images/adv_banner1.png" width="100%" />
+                                    </div>
+                                    <div class="advertisingbox">
+                                        <img src="images/adv_banner2.png" width="100%"/>
+                                    </div>             
+                                 </div>
+                            </div>
+                            <div class="footerlinks">
+                                <a class="disabled">© 2019 Autofy</a>
+                                <a href="#terms-of-use">Terms of use</a>
+                                <a href="#privacy-and-cookies">Privacy & Cookie Policy</a>
+                                <a href="#advertise">Advertise With Us</a>
+                            </div>
+                            <div class="copyright">
+                                <p>© 2019 Autofy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>					
  <script src="autofyFunctions.js"></script>
 <script>
 function ApllyClick() {
