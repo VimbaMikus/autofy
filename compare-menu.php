@@ -151,7 +151,8 @@
                     <a href="#privacy-and-cookies">Privacy & Cookie Policy</a>
                     <a href="#advertise">Advertise With Us</a>
             </div>
-            <div class="copyright"><p>© 2019 Autofy</p></div>
+            <div class="copyright"><p>© 2019 Autofy</p>
+        </div>
             </div>
     </div>
     </div>
