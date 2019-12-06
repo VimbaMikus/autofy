@@ -42,32 +42,23 @@
 
 
         <div class="container" id="container">
-                <div class="content">
+                <div class="contentAddCar">
                     <div class="hero">
                         <img src="images/hero3.png" class="heroFind"/> 
                     </div> 
                     <table class="compareBlock">
                         <tr>
                             <td>
-                    <div class="compareMenu">
-                    <h2>Choose criteria</h2>
-                      <div class="compareCriteria">
-                          <p>Brand</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Audi">Audi</option>
-                                    <option value="Volkswagen">Volkswagen</option>
-                                    <option value="Opel">Opel</option>
-                                    <option value="BMW">BMW</option>
-                            </select>
-                            <p>Year</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2018">2018</option>
-                            </select>
-                            <p>Body Style</p>
-                            <select class="selectBoxCompare">
+                    <div class="addCarClass">
+                    <h2>Fill out your car form</h2>
+                      <div class="addCarCriteria">
+                          <form>
+                              <p>Brand:</p>
+                              <input type="text" name="brand"><br />
+                              <p>Year:</p>
+                              <input type="text" name="year"><br />
+                              <p>Body Style:</p>
+                              <select class="selectBoxCompare">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Cabriolet">Cabriolet</option>
                                     <option value="Coupe">Coupe</option>
@@ -76,8 +67,8 @@
                                     <option value="Saloon">Saloon</option>
                                     <option value="Van">Van</option>
                                     <option value="SmallCar">Small Car</option>
-                            </select>
-                            <p>Fuel Type</p>
+                            </select><br />
+                            <p>Fuel type:</p>
                             <select class="selectBoxCompare">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Petrol">Petrol</option>
@@ -85,25 +76,27 @@
                                     <option value="LPG">LPG</option>
                                     <option value="Hybrid">Hybrid</option>
                                     <option value="Electric">Electric</option>
-                            </select>
-                            <p>Transmission</p>
+                            </select><br />
+                            <p>Transmission:</p>
                             <select class="selectBoxCompare">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Manual">Manual gearbox</option>
                                     <option value="Automatic">Automatic transmission</option>
-                            </select>
-                            <p>Color</p>
+                            </select><br />
+                            <p>Color:</p>
                             <select class="selectBoxCompare">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Red">Red</option>
                                     <option value="Yellow">Yellow</option>
                                     <option value="Blue">Blue</option>
                                     <option value="Black">Black</option>
-                            </select>
+                            </select><br />
+                            <p>Add car picture:</p>
+                            <input type="file" name="fileToUpload" id="fileToUpload">
+                          </form>
                     </div>  
                     <div class="buttonBlockCompare">
                         <button type="button" class="saveCriteria" onclick="window.location.href='compare.php'">Compare</button>
-                        <button type="button" class="addCar" onclick="window.location.href='compare-my-car.php'">Add your car</button>
                     </div>
     </td>
                     <tr>

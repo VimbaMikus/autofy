@@ -382,6 +382,7 @@ p{
   width: 130px;
   height: 30px;
   margin-top: 15px;
+  margin-right: 10px;
   outline: none;
 }
 .compareBlock{
@@ -502,6 +503,60 @@ p{
   outline: none;
   margin-left: 30%;
 }
+
+
+
+/* C O M P A R E  M Y  C A R */
+.addCar{
+  background-color:#1a2028;
+  border-radius: 25px;
+  color: white;
+  width: 130px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left:10px;
+  outline: none;
+}
+
+input[type=text]{
+  background-color: white;
+  border-radius: 11px;
+  width: 350px;
+  height: 25px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+input[type=file]{
+margin-left:20px;
+
+}
+
+.addCarClass{
+  width: 500px;
+  height: 600px;
+  border-radius: 25px;
+  background-color:#dee1ec;
+  padding-top: 10px;
+}
+.addCarCriteria{
+ padding-left:11%;
+}
+.addCarCriteria p{
+  font-weight: bold;
+  padding-left:2vw;
+ }
+.addCarClass h2{
+  text-align: center;
+}
+.contentAddCar{
+  background: #ffffff;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 900px;
+}
+
 /* H I S T O R Y */
 .containerHistory{
   width: 100%;
@@ -758,5 +813,31 @@ p.box{
 .login{
   display: inline-block;
   width:200px;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 300px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 40px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
 }
 
