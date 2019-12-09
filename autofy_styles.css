@@ -226,6 +226,19 @@ p{
   margin-bottom: 10px;
   font-size: 16px;
 }
+.filterBox{
+  background-color: #dee1ec;
+  border-radius: 10px;
+  width: 280px;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+.filterBoxDrop{
+  padding-top:17px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
 .filter p{
   padding-left: 25px;
   font-weight: bold;
