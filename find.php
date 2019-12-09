@@ -142,6 +142,16 @@
                     </div>
 					
 					<table class="carboxes" id="Colorbg3">
+                            <thead>
+                            <tr>
+                                <td class="filterBoxDrop">
+                            <select class="filterBox">
+                                     <option disabled selected value="">Filter by option</option>
+                                     <option value="year">Year</option>
+                            </select>
+                                </td>
+                                </tr>
+                            </thead>
                             <tbody id="data"></tbody>
                     </table>
                 </div>
