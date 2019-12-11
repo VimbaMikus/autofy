@@ -451,7 +451,10 @@ p{
 }
 
 
-
+.comparePageCriteria{
+  width:100%;
+  padding-left: 80px;
+}
 
 /* C O M P A R E  R E S U L T */
 .carboxesResult{

@@ -56,8 +56,10 @@
                             <td width="30%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
-											<?php			
-											$sql = "SELECT iamge from cars where brand = 'Audi'";
+                            <img src="images/audi_a4_2019.png" />
+                                            <?php
+                                            			
+											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -65,12 +67,12 @@
 													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
 												}
 											}
-
+                                            */      
 											?>
 
                             </div>
                             <div class="carCriteria" id="carCriteria">
-                            <table  class="criteria">										
+                            <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">
                                         <div class="title"><p>Brand</p></div>
@@ -82,9 +84,9 @@
                             <tr >
                                 <td>
                                     <div class="brand" id="brand">
-                                        <p>											
-											<?php			
-											$sql = "SELECT brand from cars where brand = 'Audi'";
+                                        <p>Audi										
+										<?php			
+											/*$sql = "SELECT brand from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -93,15 +95,15 @@
 												}
 											}
 
-											?>
+											*/?>
 											</p>
                                     </div>
                                 </td>
                                 <td>
                                         <div class="model" id="model">
-                                            <p>											
+                                            <p>A4										
 											<?php			
-											$sql = "SELECT model from cars where brand = 'Audi'";
+											/*$sql = "SELECT model from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -109,7 +111,7 @@
 													echo $row["model"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                         </div>
@@ -126,9 +128,9 @@
                             <tr>
                                     <td>
                                         <div class="year" id="year">
-                                            <p>
+                                            <p>2018
 											<?php			
-											$sql = "SELECT caryear from cars where brand = 'Audi'";
+											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -137,14 +139,14 @@
 												}
 											}
 
-											?></p>
+											*/?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="bodyStyle" id="bodyStyle">
-                                                <p>
+                                                <p>Sedan
 											<?php			
-											$sql = "SELECT bodysytle from cars where brand = 'Audi'";
+											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -153,7 +155,7 @@
 												}
 											}
 
-											?>
+											*/?>
 											</p>
                                             </div>
                                     </td>
@@ -169,9 +171,9 @@
                             <tr>
                                     <td>
                                         <div class="fuelType" id="fuelType">
-                                            <p>
+                                            <p>Petrol
 											<?php			
-											$sql = "SELECT fueltype from cars where brand = 'Audi'";
+											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -180,14 +182,14 @@
 												}
 											}
 
-											?></p>
+											*/?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="transmission" id="transmission">
-                                                <p>
+                                                <p>Manual
 											<?php			
-											$sql = "SELECT transmission from cars where brand = 'Audi'";
+											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -196,7 +198,7 @@
 												}
 											}
 
-											?></p>
+											*/?></p>
                                             </div>
                                     </td>
                             </tr>
@@ -215,8 +217,9 @@
                         <td width="30%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
+                                <img src="images/bmw_230_2019_grey_coupe.png" />
 											<?php			
-											$sql = "SELECT iamge from cars where brand = 'Audi'";
+											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -224,12 +227,12 @@
 													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
 												}
 											}
-
+*/
 											?>
 
                             </div>
                             <div class="carCriteria" id="carCriteria">
-                            <table  class="criteria">										
+                            <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">
                                         <div class="title"><p>Brand</p></div>
@@ -241,9 +244,9 @@
                             <tr >
                                 <td>
                                     <div class="brand" id="brand">
-                                        <p>											
+                                        <p>	BMW										
 											<?php			
-											$sql = "SELECT brand from cars where brand = 'Audi'";
+											/*$sql = "SELECT brand from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -251,16 +254,16 @@
 													echo $row["brand"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                     </div>
                                 </td>
                                 <td>
                                         <div class="model" id="model">
-                                            <p>											
+                                            <p>		230									
 											<?php			
-											$sql = "SELECT model from cars where brand = 'Audi'";
+											/*$sql = "SELECT model from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -268,7 +271,7 @@
 													echo $row["model"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                         </div>
@@ -285,9 +288,9 @@
                             <tr>
                                     <td>
                                         <div class="year" id="year">
-                                            <p>
+                                            <p>2019
 											<?php			
-											$sql = "SELECT caryear from cars where brand = 'Audi'";
+											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -296,14 +299,14 @@
 												}
 											}
 
-											?></p>
+											*/?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="bodyStyle" id="bodyStyle">
-                                                <p>
+                                                <p>Coupe
 											<?php			
-											$sql = "SELECT bodysytle from cars where brand = 'Audi'";
+											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -311,7 +314,7 @@
 													echo $row["bodysytle"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                             </div>
@@ -328,9 +331,9 @@
                             <tr>
                                     <td>
                                         <div class="fuelType" id="fuelType">
-                                            <p>
+                                            <p>Diesel
 											<?php			
-											$sql = "SELECT fueltype from cars where brand = 'Audi'";
+											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -338,15 +341,15 @@
 													echo $row["fueltype"];
 												}
 											}
-
+*/
 											?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="transmission" id="transmission">
-                                                <p>
+                                                <p>Automatic
 											<?php			
-											$sql = "SELECT transmission from cars where brand = 'Audi'";
+											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -354,7 +357,7 @@
 													echo $row["transmission"];
 												}
 											}
-
+*/
 											?></p>
                                             </div>
                                     </td>
@@ -380,8 +383,9 @@
                             <td width="30%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
+                                <img src="images/bmw_230_2019_grey_coupe.png" />
 											<?php			
-											$sql = "SELECT iamge from cars where brand = 'Audi'";
+											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -389,12 +393,12 @@
 													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
 												}
 											}
-
+*/
 											?>
 
                             </div>
                             <div class="carCriteria" id="carCriteria">
-                            <table  class="criteria">										
+                            <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">
                                         <div class="title"><p>Brand</p></div>
@@ -406,9 +410,9 @@
                             <tr >
                                 <td>
                                     <div class="brand" id="brand">
-                                        <p>											
+                                        <p>BMW										
 											<?php			
-											$sql = "SELECT brand from cars where brand = 'Audi'";
+											/*$sql = "SELECT brand from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -416,16 +420,16 @@
 													echo $row["brand"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                     </div>
                                 </td>
                                 <td>
                                         <div class="model" id="model">
-                                            <p>											
+                                            <p>	230										
 											<?php			
-											$sql = "SELECT model from cars where brand = 'Audi'";
+											/*$sql = "SELECT model from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -433,7 +437,7 @@
 													echo $row["model"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                         </div>
@@ -450,9 +454,9 @@
                             <tr>
                                     <td>
                                         <div class="year" id="year">
-                                            <p>
+                                            <p>2019
 											<?php			
-											$sql = "SELECT caryear from cars where brand = 'Audi'";
+											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -460,15 +464,15 @@
 													echo $row["caryear"];
 												}
 											}
-
+*/
 											?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="bodyStyle" id="bodyStyle">
-                                                <p>
+                                                <p>Coupe
 											<?php			
-											$sql = "SELECT bodysytle from cars where brand = 'Audi'";
+											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -476,7 +480,7 @@
 													echo $row["bodysytle"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                             </div>
@@ -493,9 +497,9 @@
                             <tr>
                                     <td>
                                         <div class="fuelType" id="fuelType">
-                                            <p>
+                                            <p>Diesel
 											<?php			
-											$sql = "SELECT fueltype from cars where brand = 'Audi'";
+											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -503,15 +507,15 @@
 													echo $row["fueltype"];
 												}
 											}
-
+*/
 											?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="transmission" id="transmission">
-                                                <p>
+                                                <p>Automatic
 											<?php			
-											$sql = "SELECT transmission from cars where brand = 'Audi'";
+											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -520,7 +524,7 @@
 												}
 											}
 
-											?></p>
+											*/?></p>
                                             </div>
                                     </td>
                             </tr>
@@ -539,8 +543,9 @@
                         <td width="30%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
+                            <img src="images/audi_a4_2019.png" />
 											<?php			
-											$sql = "SELECT iamge from cars where brand = 'Audi'";
+											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -548,12 +553,12 @@
 													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
 												}
 											}
-
+*/
 											?>
 
                             </div>
                             <div class="carCriteria" id="carCriteria">
-                            <table  class="criteria">										
+                            <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">
                                         <div class="title"><p>Brand</p></div>
@@ -565,9 +570,9 @@
                             <tr >
                                 <td>
                                     <div class="brand" id="brand">
-                                        <p>											
+                                        <p>		Audi									
 											<?php			
-											$sql = "SELECT brand from cars where brand = 'Audi'";
+											/*$sql = "SELECT brand from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -575,16 +580,16 @@
 													echo $row["brand"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                     </div>
                                 </td>
                                 <td>
                                         <div class="model" id="model">
-                                            <p>											
+                                            <p>	A4										
 											<?php			
-											$sql = "SELECT model from cars where brand = 'Audi'";
+											/*$sql = "SELECT model from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -592,7 +597,7 @@
 													echo $row["model"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                         </div>
@@ -609,9 +614,9 @@
                             <tr>
                                     <td>
                                         <div class="year" id="year">
-                                            <p>
+                                            <p>2018
 											<?php			
-											$sql = "SELECT caryear from cars where brand = 'Audi'";
+											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -619,15 +624,15 @@
 													echo $row["caryear"];
 												}
 											}
-
+*/
 											?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="bodyStyle" id="bodyStyle">
-                                                <p>
+                                                <p>Sedan
 											<?php			
-											$sql = "SELECT bodysytle from cars where brand = 'Audi'";
+											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -635,7 +640,7 @@
 													echo $row["bodysytle"];
 												}
 											}
-
+*/
 											?>
 											</p>
                                             </div>
@@ -652,9 +657,9 @@
                             <tr>
                                     <td>
                                         <div class="fuelType" id="fuelType">
-                                            <p>
+                                            <p>Petrol
 											<?php			
-											$sql = "SELECT fueltype from cars where brand = 'Audi'";
+											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -662,15 +667,15 @@
 													echo $row["fueltype"];
 												}
 											}
-
+*/
 											?></p>
                                         </div>
                                     </td>
                                     <td>
                                             <div class="transmission" id="transmission">
-                                                <p>
+                                                <p>Manual
 											<?php			
-											$sql = "SELECT transmission from cars where brand = 'Audi'";
+											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -678,7 +683,7 @@
 													echo $row["transmission"];
 												}
 											}
-
+*/
 											?></p>
                                             </div>
                                     </td>
