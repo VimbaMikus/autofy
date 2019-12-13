@@ -835,6 +835,10 @@ p.advert{
   max-height: 110px;
   overflow: hidden;
 }
+.textbox a{
+  text-decoration: none;
+  color: white;
+}
 
 
 p.box{
