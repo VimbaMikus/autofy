@@ -28,7 +28,7 @@
             <a href="find.php">Find</a>
             <a class ="active" href="compare-menu.php">Compare</a>
             <a href="history.php">History</a>
-            <a href="#information">About Us</a>
+            <a href="about-us.html">About Us</a>
             <a href="signin.html" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
                 <i class="fa fa-bars"></i>
@@ -44,16 +44,13 @@
         <div class="container" id="container">
                 <div class="content" id="Colorbg">
                     <div class="hero">
-                        <img src="images/hero3.png" class="heroFind"/>
-                    
-                    
-
-                            
-                          
+                        <img src="images/hero3.png" class="heroFind"/>                   
                     </div>
+
+
                     <table class="carboxesCompare" id="carboxesCompare">
                         <tr>
-                            <td width="30%">
+                            <td width="50%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
                             <img src="images/audi_a4_2019.png" />
@@ -71,7 +68,7 @@
 											?>
 
                             </div>
-                            <div class="carCriteria" id="carCriteria">
+                            <div class="carCriteriaCompare" id="carCriteria">
                             <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">
@@ -214,7 +211,7 @@
 
 
 <!--NEW CAR COLUMN-->
-                        <td width="30%">
+                        <td width="50%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
                                 <img src="images/bmw_230_2019_grey_coupe.png" />
@@ -231,7 +228,7 @@
 											?>
 
                             </div>
-                            <div class="carCriteria" id="carCriteria">
+                            <div class="carCriteriaCompare" id="carCriteria">
                             <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">
@@ -380,7 +377,7 @@
 
 
 <tr>
-                            <td width="30%">
+                            <td width="50%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
                                 <img src="images/bmw_230_2019_grey_coupe.png" />
@@ -397,7 +394,7 @@
 											?>
 
                             </div>
-                            <div class="carCriteria" id="carCriteria">
+                            <div class="carCriteriaCompare" id="carCriteria">
                             <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">
@@ -540,7 +537,7 @@
 
 
 <!--NEW CAR COLUMN-->
-                        <td width="30%">
+                        <td width="50%">
                          <div class="carboxCompare">
                             <div class="carPicture" id="carPicture">
                             <img src="images/audi_a4_2019.png" />
@@ -557,7 +554,7 @@
 											?>
 
                             </div>
-                            <div class="carCriteria" id="carCriteria">
+                            <div class="carCriteriaCompare" id="carCriteria">
                             <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="50%">

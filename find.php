@@ -35,7 +35,7 @@
             <a class ="active" href="find.php">Find</a>
             <a href="compare-menu.php">Compare</a>
             <a href="history.php">History</a>
-            <a href="#information">About Us</a>
+            <a href="about-us.html">About Us</a>
             <a href="signin.html" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
                 <i class="fa fa-bars"></i>
@@ -222,7 +222,7 @@ function ApllyClick() {
                    
                   if (a%2 === 0) { 
                   html+="<tr>";
-                          html+="<td width='40%'>";
+                          html+="<td width='50%'>";
                        html+="<div class='carbox'>";
                           html+="<div class='carPicture' id='carPicture'>";
                           html+="<img src='/autofy/images/Audi_A4_2019_black_sedan.png'>";
@@ -299,7 +299,7 @@ function ApllyClick() {
 
                   } else {
                       
-                      html +="<td width='40%'>";
+                      html +="<td width='50%'>";
                        html +="<div class='carbox'>";
                           html +="<div class='carPicture' id='carPicture'>";
                           if (data[a].brand === 'Audi'){

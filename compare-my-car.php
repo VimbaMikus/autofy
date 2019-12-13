@@ -28,7 +28,7 @@
             <a href="find.php">Find</a>
             <a class ="active" href="compare-menu.php">Compare</a>
             <a href="history.php">History</a>
-            <a href="#information">About Us</a>
+            <a href="about-us.html">About Us</a>
             <a href="signin.html" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
                 <i class="fa fa-bars"></i>
