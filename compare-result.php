@@ -28,7 +28,7 @@
             <a href="find.php">Find</a>
             <a class ="active" href="compare-menu.php">Compare</a>
             <a href="history.php">History</a>
-            <a href="#information">About Us</a>
+            <a href="about-us.html">About Us</a>
             <a href="signin.html" class="rightSide"><i class="fas fa-user-circle"></i> Account</a>
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
                 <i class="fa fa-bars"></i>
@@ -44,21 +44,19 @@
         <div class="containerResult">
                 <div class="contentResult">
                     <div class="hero">
-                        <img src="images/hero3.png" class="heroFind"/>
-                    
-                    </div>                   
- 
-                <table class="carboxesResult">
-                    <tr>
-                    <td width="100%">
-                    <div class="carboxResult">
-                        <table class="carboxesResultInside">
-                            <tr>
-                        <td width="50%">
+                        <img src="images/hero3.png" class="heroFind"/>                   
+                    </div> 
+
+                    <table class="carboxesResult">
+                        <tr>
+                            <td width="100%">
+                         <div class="carboxResult">
+                             
                             <div class="carPictureResult" id="carPicture">
-                                <img src="images/audi_a4_large2.png" width="80%"/>
-											<?php /*			
-											$sql = "SELECT iamge from cars where brand = 'Audi'";
+                            <img src="images/audi_a4_2019.png" />
+                                            <?php
+                                            			
+											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
 											$result = $conn->query($sql);
 											if ($result->num_rows > 0) 
 											{
@@ -66,13 +64,13 @@
 													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
 												}
 											}
-                                                */
+                                            */      
 											?>
                             </div>
-                        </td>
-                        <td width="50%">
+
+                        
                             <div class="carCriteriaResult" id="carCriteria">
-                            <table  class="criteriaResult">										
+                            <table  class="comparePageCriteria">										
                             <tr height="20px">
                                 <td width="40%">
                                         <div class="title"><p>Brand</p></div>
@@ -136,6 +134,9 @@
                                         </div>
                                     </td>
                             </tr>
+
+                            
+
                             <tr>
                                     <td>
                                         <div class="title"><p>Body Style</p></div>
@@ -198,25 +199,22 @@
                                             </div>
                                     </td>
                             </tr>
-                            <tr>
-                                <td colspan="3"><button type="button" class="saveResult" onclick="window.location.href='history.php'">Save</button>  </td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
                             </table>
                             </div>
-                                        </tr>
-                        </table>
+                            <div class="buttonsBlock">
+                            <button type="button" class="saveResult" onclick="window.location.href='history.php'">Save</button>
+                            </div>
+                        </div>
                         </td>
-                    </div>
-                    </td>
-                    </tr> 
-                    
-                
-                </table>
+                    </tr>    
+                    </table>
+                       
+
                 </div>
-            </div>
+        </div>
+            
+
+            
 
 
 
