@@ -146,8 +146,9 @@
                             <tr>
                                 <td class="filterBoxDrop">
                             <select class="filterBox" id = "sort" onChange = "ApllyClick()">
-                                     <option disabled selected value="">Sort by option</option>
-                                     <option value="year">Year</option>
+                                     <option disabled selected value="">Sort by year</option>
+                                     <option value="A-Z">A-Z</option>
+									 <option value="Z-A">Z-A</option>
                             </select>
                                 </td>
                                 </tr>
@@ -238,9 +239,16 @@ var count = 0;
           var html = "";
 		  document.getElementById("data").innerHTML += html;
 		  
-		  if (Sort === "year") {
+		  if (Sort === "A-Z") {
 		  data.sort(function(a, b) {
 				return parseFloat(a.caryear) -  parseFloat(b.caryear);
+				
+			});
+		  }
+		  
+		  if (Sort === "Z-A") {
+		  data.sort(function(a, b) {
+				return parseFloat(b.caryear) -  parseFloat(a.caryear);
 				
 			});
 		  }
