@@ -57,7 +57,7 @@
 					
                             <p>Brand</p>
 							<form action="" method="post">
-                            <select class="selectBox" name="brand" action="dati.php">
+                            <select class="selectBox" id="brand">
                                     <option disabled selected value="">Choose your option</option>
 									<?php
 									while($row=mysqli_fetch_array($sqlbrand))
@@ -72,7 +72,7 @@
                             </select>
 							</form>
                             <p>Year</p>
-                            <select class="selectBox">
+                            <select class="selectBox" id="year">
 									<option disabled selected value="">Choose your option</option>
 									<?php
 									while($row=mysqli_fetch_array($sqlyear))
@@ -86,7 +86,7 @@
 							
                             </select>
                             <p>Body Style</p>
-                            <select class="selectBox">
+                            <select class="selectBox" id = "style" >
 									<option disabled selected value="">Choose your option</option>
 									<?php
 									while($row=mysqli_fetch_array($sqlbodystyle))
@@ -99,7 +99,7 @@
 									?>
                             </select>
                             <p>Fuel Type</p>
-                            <select class="selectBox">
+                            <select class="selectBox" id = "type">
 									<option disabled selected value="">Choose your option</option>
 									<?php
 									while($row=mysqli_fetch_array($sqlfueltype))
@@ -112,7 +112,7 @@
 									?>
                             </select>
                             <p>Transmission</p>
-                            <select class="selectBox">
+                            <select class="selectBox" id = "trans">
 									<option disabled selected value="">Choose your option</option>
 									<?php
 									while($row=mysqli_fetch_array($sqltrans))
@@ -125,7 +125,7 @@
 									?>
                             </select>
                             <p>Model</p>
-                            <select class="selectBox">
+                            <select class="selectBox" id = "model">
                                      <option disabled selected value="">Choose your option</option>
 									<?php
 									while($row=mysqli_fetch_array($sqlmodel))
@@ -145,8 +145,8 @@
                             <thead>
                             <tr>
                                 <td class="filterBoxDrop">
-                            <select class="filterBox">
-                                     <option disabled selected value="">Filter by option</option>
+                            <select class="filterBox" id = "sort" onChange = "ApllyClick()">
+                                     <option disabled selected value="">Sort by option</option>
                                      <option value="year">Year</option>
                             </select>
                                 </td>
@@ -206,6 +206,25 @@
 <script src="autofyFunctions.js"></script>
 <script>
 function ApllyClick() {
+var SelectedBrand = document.getElementById("brand").value;
+var SelectedModel = document.getElementById("model").value;
+var SelectedYear = document.getElementById("year").value;
+var SelectedStyle = document.getElementById("style").value;
+var SelectedType = document.getElementById("type").value;
+var SelectedTrans = document.getElementById("trans").value;
+var Sort = document.getElementById("sort").value;
+
+if ((SelectedBrand === "" )
+	&& (SelectedModel === "")
+	&& (SelectedYear === "")
+	&& (SelectedStyle === "")
+	&& (SelectedType === "")
+	&& (SelectedTrans === "")) {
+		window.alert("Insert at least 1 filter value!");
+	} else {
+
+
+var count = 0;
    
    var ajax = new XMLHttpRequest();
   ajax.open("GET", "dati.php", true);
@@ -217,6 +236,15 @@ function ApllyClick() {
           console.log(data);
 
           var html = "";
+		  document.getElementById("data").innerHTML += html;
+		  
+		  if (Sort === "year") {
+		  data.sort(function(a, b) {
+				return parseFloat(a.caryear) -  parseFloat(b.caryear);
+				
+			});
+		  }
+		  
           for(var a = 0; a < data.length; a++) {
               var brand = data[a].brand;
               var model = data[a].model;
@@ -224,13 +252,21 @@ function ApllyClick() {
               var bodysytle = data[a].bodysytle;
               var fueltype = data[a].fueltype;
               var transmission = data[a].transmission;
-                   
-                  if (a%2 === 0) { 
+			  var image = data[a].image;
+			                   
+                  if ((count%2 === 0) 
+					&& (SelectedBrand === "" || data[a].brand === SelectedBrand )
+					&& (SelectedModel === "" || data[a].model === SelectedModel )
+					&& (SelectedYear === "" || data[a].caryear === SelectedYear )
+					&& (SelectedStyle === "" || data[a].bodysytle === SelectedStyle )
+					&& (SelectedType === "" || data[a].fueltype === SelectedType )
+					&& (SelectedTrans === "" || data[a].transmission === SelectedTrans )){ 
+				  count = count +1;
                   html+="<tr>";
                           html+="<td width='50%'>";
                        html+="<div class='carbox'>";
                           html+="<div class='carPicture' id='carPicture'>";
-                          html+="<img src='/autofy/images/Audi_A4_2019_black_sedan.png'>";
+                          html+=image;
                           html+="</div>";
                           html+="<div class='carCriteria' id='carCriteria'>";
                           html+="<table  class='criteria'>";										
@@ -302,37 +338,18 @@ function ApllyClick() {
                       html+="</div>";
                       html+="</td>";
 
-                  } else {
+                  } else if ((SelectedBrand === "" || data[a].brand === SelectedBrand)
+					&& (SelectedModel === "" || data[a].model === SelectedModel )
+					&& (SelectedYear === "" || data[a].caryear === SelectedYear )
+					&& (SelectedStyle === "" || data[a].bodysytle === SelectedStyle )
+					&& (SelectedType === "" || data[a].fueltype === SelectedType )
+					&& (SelectedTrans === "" || data[a].transmission === SelectedTrans )){
                       
+					  count = count +1;
                       html +="<td width='50%'>";
                        html +="<div class='carbox'>";
                           html +="<div class='carPicture' id='carPicture'>";
-                          if (data[a].brand === 'Audi'){
-                          html+="<img src='/autofy/images/Audi_A4_2019_black_sedan.png'>";
-                          }
-                          if(data[a].brand === 'BMW') {
-                          html+="<img src='/autofy/images/bmw_330_2019_white_wagon.png'>";	
-                          }
-                          if(data[a].brand === 'Lexus')
-                          {
-                          html+="<img src='/autofy/images/Lexus_NX_2019_white_offroad.png'>";
-                          }
-                          if(data[a].brand === 'Mercedes-Benz')
-                          {
-                          html+="<img src='/autofy/images/Mercedes-Benz_AMG-GT_2019_grey_coupe.png'>";
-                          }
-                          if(data[a].brand === 'Toyota')
-                          {
-                          html+="<img src='/autofy/images/Toyota_Corolla_2019_beige_sedan.png'>";
-                          }
-                          if(data[a].brand === 'Volkswagen')
-                          {
-                          html+="<img src='/autofy/images/Volkswagen_GTI_2019_black_Hatchback.png'>";
-                          }
-                          if(data[a].brand === 'Volvo')
-                          {
-                          html+="<img src='/autofy/images/Volvo_S90_2019_white_sedan.png'>";
-                          }
+                          html+=image;
                           html +="</div>";
                           html +="<div class='carCriteria' id='carCriteria'>";
                           html +="<table  class='criteria'>";										
@@ -409,11 +426,15 @@ function ApllyClick() {
           }
          
       }
-      
-          document.getElementById("data").innerHTML += html;
+					//iztiiram vecos datus
+		var Table = document.getElementById("data");
+		Table.innerHTML = "";
+		
+        document.getElementById("data").innerHTML += html;
       }
       
   };
+	}
 }
 </script>
     </body>
