@@ -52,13 +52,13 @@
                     <div class="addCarClass">
                     <h2>Fill out your car form</h2>
                       <div class="addCarCriteria">
-                          <form>
+                          <form method="post" action="add.php">
                               <p>Brand:</p>
                               <input type="text" name="brand"><br />
                               <p>Year:</p>
                               <input type="text" name="year"><br />
                               <p>Body Style:</p>
-                              <select class="selectBoxCompare">
+                              <select class="selectBoxCompare" name="style">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Cabriolet">Cabriolet</option>
                                     <option value="Coupe">Coupe</option>
@@ -69,7 +69,7 @@
                                     <option value="SmallCar">Small Car</option>
                             </select><br />
                             <p>Fuel type:</p>
-                            <select class="selectBoxCompare">
+                            <select class="selectBoxCompare" name = "type">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Petrol">Petrol</option>
                                     <option value="Diesel">Diesel</option>
@@ -78,21 +78,17 @@
                                     <option value="Electric">Electric</option>
                             </select><br />
                             <p>Transmission:</p>
-                            <select class="selectBoxCompare">
+                            <select class="selectBoxCompare" name = "transmission">
                                     <option disabled selected value="">Choose your option</option>
                                     <option value="Manual">Manual gearbox</option>
                                     <option value="Automatic">Automatic transmission</option>
                             </select><br />
-                            <p>Color:</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Red">Red</option>
-                                    <option value="Yellow">Yellow</option>
-                                    <option value="Blue">Blue</option>
-                                    <option value="Black">Black</option>
-                            </select><br />
+                            <p>Model:</p>
+                              <input type="text" name="model"><br />
+                            
                             <p>Add car picture:</p>
                             <input type="file" name="fileToUpload" id="fileToUpload">
+							<input type="submit" value="Submit">
                           </form>
                     </div>  
                     <div class="buttonBlockCompare">

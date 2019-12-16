@@ -51,10 +51,11 @@
                     <table class="carboxesCompare" id="carboxesCompare">
                        
 <tr>
+	<tbody id="data"></tbody>
     <td colspan="2"><button type="button" class="CompareButton" onclick="window.location.href='compare-result.php'">Compare</button></td>
     <td></td>
 </tr>
-<tbody id="data"></tbody>
+
                     </table>
                 </div>
             </div>

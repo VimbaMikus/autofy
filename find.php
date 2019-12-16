@@ -261,6 +261,8 @@ var count = 0;
               var fueltype = data[a].fueltype;
               var transmission = data[a].transmission;
 			  var image = data[a].image;
+			  if (image === null) {
+			  image = "<img src='/autofy/images/defaulteduards.png'>" }
 			                   
                   if ((count%2 === 0) 
 					&& (SelectedBrand === "" || data[a].brand === SelectedBrand )
