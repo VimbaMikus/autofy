@@ -49,669 +49,12 @@
 
 
                     <table class="carboxesCompare" id="carboxesCompare">
-                        <tr>
-                            <td width="50%">
-                         <div class="carboxCompare">
-                            <div class="carPicture" id="carPicture">
-                            <img src="images/audi_a4_2019.png" />
-                                            <?php
-                                            			
-											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
-												}
-											}
-                                            */      
-											?>
-
-                            </div>
-                            <div class="carCriteriaCompare" id="carCriteria">
-                            <table  class="comparePageCriteria">										
-                            <tr height="20px">
-                                <td width="50%">
-                                        <div class="title"><p>Brand</p></div>
-                                </td>
-                                <td width="50%">
-                                    <div class="title"><p>Model</p></div>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td>
-                                    <div class="brand" id="brand">
-                                        <p>Audi										
-										<?php			
-											/*$sql = "SELECT brand from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["brand"];
-												}
-											}
-
-											*/?>
-											</p>
-                                    </div>
-                                </td>
-                                <td>
-                                        <div class="model" id="model">
-                                            <p>A4										
-											<?php			
-											/*$sql = "SELECT model from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["model"];
-												}
-											}
-*/
-											?>
-											</p>
-                                        </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Year</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Body Style</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="year" id="year">
-                                            <p>2018
-											<?php			
-											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["caryear"];
-												}
-											}
-
-											*/?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="bodyStyle" id="bodyStyle">
-                                                <p>Sedan
-											<?php			
-											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["bodysytle"];
-												}
-											}
-
-											*/?>
-											</p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Fuel Type</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Transmission</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="fuelType" id="fuelType">
-                                            <p>Petrol
-											<?php			
-											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["fueltype"];
-												}
-											}
-
-											*/?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="transmission" id="transmission">
-                                                <p>Manual
-											<?php			
-											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["transmission"];
-												}
-											}
-
-											*/?></p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            </table>
-                            </div>
-                            <div class="buttonsBlock">
-                                <button type="submit" class="choose" id="choose11" onclick="chooseButton1(this)">Choose</button>
-                            </div>
-                        </div>
-                        </td>
-
-
-
-
-<!--NEW CAR COLUMN-->
-                        <td width="50%">
-                         <div class="carboxCompare">
-                            <div class="carPicture" id="carPicture">
-                                <img src="images/bmw_230_2019_grey_coupe.png" />
-											<?php			
-											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
-												}
-											}
-*/
-											?>
-
-                            </div>
-                            <div class="carCriteriaCompare" id="carCriteria">
-                            <table  class="comparePageCriteria">										
-                            <tr height="20px">
-                                <td width="50%">
-                                        <div class="title"><p>Brand</p></div>
-                                </td>
-                                <td width="50%">
-                                    <div class="title"><p>Model</p></div>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td>
-                                    <div class="brand" id="brand">
-                                        <p>	BMW										
-											<?php			
-											/*$sql = "SELECT brand from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["brand"];
-												}
-											}
-*/
-											?>
-											</p>
-                                    </div>
-                                </td>
-                                <td>
-                                        <div class="model" id="model">
-                                            <p>		230									
-											<?php			
-											/*$sql = "SELECT model from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["model"];
-												}
-											}
-*/
-											?>
-											</p>
-                                        </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Year</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Body Style</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="year" id="year">
-                                            <p>2019
-											<?php			
-											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["caryear"];
-												}
-											}
-
-											*/?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="bodyStyle" id="bodyStyle">
-                                                <p>Coupe
-											<?php			
-											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["bodysytle"];
-												}
-											}
-*/
-											?>
-											</p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Fuel Type</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Transmission</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="fuelType" id="fuelType">
-                                            <p>Diesel
-											<?php			
-											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["fueltype"];
-												}
-											}
-*/
-											?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="transmission" id="transmission">
-                                                <p>Automatic
-											<?php			
-											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["transmission"];
-												}
-											}
-*/
-											?></p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            </table>
-                            </div>
-                            <div class="buttonsBlock">
-                                <button type="button" class="choose" id="choose12" onclick="chooseButton2(this)">Choose</button>
-                            </div>
-                        </div>
-                        </td>
-
-</tr>
-
-
-
-
-
-
-
-
-<tr>
-                            <td width="50%">
-                         <div class="carboxCompare">
-                            <div class="carPicture" id="carPicture">
-                                <img src="images/bmw_230_2019_grey_coupe.png" />
-											<?php			
-											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
-												}
-											}
-*/
-											?>
-
-                            </div>
-                            <div class="carCriteriaCompare" id="carCriteria">
-                            <table  class="comparePageCriteria">										
-                            <tr height="20px">
-                                <td width="50%">
-                                        <div class="title"><p>Brand</p></div>
-                                </td>
-                                <td width="50%">
-                                    <div class="title"><p>Model</p></div>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td>
-                                    <div class="brand" id="brand">
-                                        <p>BMW										
-											<?php			
-											/*$sql = "SELECT brand from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["brand"];
-												}
-											}
-*/
-											?>
-											</p>
-                                    </div>
-                                </td>
-                                <td>
-                                        <div class="model" id="model">
-                                            <p>	230										
-											<?php			
-											/*$sql = "SELECT model from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["model"];
-												}
-											}
-*/
-											?>
-											</p>
-                                        </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Year</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Body Style</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="year" id="year">
-                                            <p>2019
-											<?php			
-											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["caryear"];
-												}
-											}
-*/
-											?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="bodyStyle" id="bodyStyle">
-                                                <p>Coupe
-											<?php			
-											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["bodysytle"];
-												}
-											}
-*/
-											?>
-											</p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Fuel Type</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Transmission</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="fuelType" id="fuelType">
-                                            <p>Diesel
-											<?php			
-											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["fueltype"];
-												}
-											}
-*/
-											?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="transmission" id="transmission">
-                                                <p>Automatic
-											<?php			
-											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["transmission"];
-												}
-											}
-
-											*/?></p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            </table>
-                            </div>
-                            <div class="buttonsBlock">
-                                <button type="submit" class="choose" id="choose21" onclick="chooseButton1(this)">Choose</button>
-                            </div>
-                        </div>
-                        </td>
-
-
-
-
-<!--NEW CAR COLUMN-->
-                        <td width="50%">
-                         <div class="carboxCompare">
-                            <div class="carPicture" id="carPicture">
-                            <img src="images/audi_a4_2019.png" />
-											<?php			
-											/*$sql = "SELECT iamge from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo '<img src="data:images/jpg;base64,' . base64_encode($row['iamge']) . '" width=250 height=130/>';
-												}
-											}
-*/
-											?>
-
-                            </div>
-                            <div class="carCriteriaCompare" id="carCriteria">
-                            <table  class="comparePageCriteria">										
-                            <tr height="20px">
-                                <td width="50%">
-                                        <div class="title"><p>Brand</p></div>
-                                </td>
-                                <td width="50%">
-                                    <div class="title"><p>Model</p></div>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td>
-                                    <div class="brand" id="brand">
-                                        <p>		Audi									
-											<?php			
-											/*$sql = "SELECT brand from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["brand"];
-												}
-											}
-*/
-											?>
-											</p>
-                                    </div>
-                                </td>
-                                <td>
-                                        <div class="model" id="model">
-                                            <p>	A4										
-											<?php			
-											/*$sql = "SELECT model from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["model"];
-												}
-											}
-*/
-											?>
-											</p>
-                                        </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Year</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Body Style</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="year" id="year">
-                                            <p>2018
-											<?php			
-											/*$sql = "SELECT caryear from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["caryear"];
-												}
-											}
-*/
-											?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="bodyStyle" id="bodyStyle">
-                                                <p>Sedan
-											<?php			
-											/*$sql = "SELECT bodysytle from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["bodysytle"];
-												}
-											}
-*/
-											?>
-											</p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="title"><p>Fuel Type</p></div>
-                                    </td>
-                                    <td>
-                                        <div class="title"><p>Transmission</p></div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td>
-                                        <div class="fuelType" id="fuelType">
-                                            <p>Petrol
-											<?php			
-											/*$sql = "SELECT fueltype from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["fueltype"];
-												}
-											}
-*/
-											?></p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                            <div class="transmission" id="transmission">
-                                                <p>Manual
-											<?php			
-											/*$sql = "SELECT transmission from cars where brand = 'Audi'";
-											$result = $conn->query($sql);
-											if ($result->num_rows > 0) 
-											{
-												while($row = $result->fetch_assoc()){ 
-													echo $row["transmission"];
-												}
-											}
-*/
-											?></p>
-                                            </div>
-                                    </td>
-                            </tr>
-                            </table>
-                            </div>
-                            <div class="buttonsBlock">
-                                <button type="button" class="choose" id="choose22" onclick="chooseButton2(this)">Choose</button>
-                            </div>
-                        </div>
-                        </td>
-
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                       
 <tr>
     <td colspan="2"><button type="button" class="CompareButton" onclick="window.location.href='compare-result.php'">Compare</button></td>
     <td></td>
 </tr>
+<tbody id="data"></tbody>
                     </table>
                 </div>
             </div>
@@ -769,6 +112,261 @@
         </div>
     </div>
     <script src="autofyFunctions.js"></script>
+	<script>
+	var Brand = localStorage.getItem("brand");
+	var Model = localStorage.getItem("model");
+	var Year = localStorage.getItem("year");
+	var Style = localStorage.getItem("style");
+	var Type = localStorage.getItem("type");
+	var Trans = localStorage.getItem("trans");
+   
+  var ajax = new XMLHttpRequest();
+  ajax.open("GET", "dati.php", true);
+  ajax.send();
+
+  ajax.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          var data = JSON.parse(this.responseText);
+          console.log(data);
+
+          var html = "";
+		  var count = 0;
+		  var columnCount = 1;
+          for(var a = 0; a < data.length; a++) {
+              var brand = data[a].brand;
+              var model = data[a].model;
+              var caryear = data[a].caryear;
+              var bodysytle = data[a].bodysytle;
+              var fueltype = data[a].fueltype;
+              var transmission = data[a].transmission;
+			  var image = data[a].image;
+
+			
+			       if ((count%2 === 0) 
+					&& (Brand === "" || data[a].brand === Brand )
+					&& (Model === "" || data[a].model === Model )
+					&& (Year === "" || data[a].caryear === Year )
+					&& (Style === "" || data[a].bodysytle === Style )
+					&& (Type === "" || data[a].fueltype === Type )
+					&& (Trans === "" || data[a].transmission === Trans )){ 
+					
+					count = count +1;
+							html+="<tr>";
+                            html+="<td width='50%'>";
+							html+="<div class='carboxCompare'>";
+                            html+="<div class='carPicture' id='carPicture'>";
+                            html+=image;
+
+                            html+="</div>";
+                            html+="<div class='carCriteriaCompare' id='carCriteria'>";
+                            html+="<table  class='comparePageCriteria'>";									
+                            html+="<tr height='20px'>";
+                                html+="<td width='50%'>";
+                                        html+="<div class='title'><p>Brand</p></div>";
+                                html+="</td>";
+                                html+="<td width='50%'>";
+                                    html+="<div class='title'><p>Model</p></div>";
+                                html+="</td>";
+                            html+="</tr>";
+                            html+="<tr >";
+                                html+="<td>";
+                                    html+="<div class='brand' id='brand'>";
+                                        html+="<p>";
+										html+=columnCount; html+=1;
+										html+="</p>";
+                                    html+="</div>";
+                                html+="</td>";
+                                html+="<td>";
+                                        html+="<div class='model' id='model'>";
+                                            html+="<p>";
+											html+=model;
+											
+											html+="</p>";
+                                        html+="</div>";
+                                html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Year</p></div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Body Style</p></div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='year' id='year'>";
+                                            html+="<p>";
+											html+=caryear;
+											html+="</p>";
+                                        html+="</div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                            html+="<div class='bodyStyle' id='bodyStyle'>";
+                                                html+="<p>";
+												html+=bodysytle;
+												html+="</p>";
+                                            html+="</div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Fuel Type</p></div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Transmission</p></div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='fuelType' id='fuelType'>";
+                                            html+="<p>";
+											html+=fueltype;
+											html+="</p>";
+                                        html+="</div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                            html+="<div class='transmission' id='transmission'>";
+                                                html+="<p>";
+												html+=transmission;
+											html+="</p>";
+                                            html+="</div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="</table>";
+                            html+="</div>";
+                            html+="<div class='buttonsBlock'>";
+                                html+="<button type='submit' class='choose' id='choose"; html+=columnCount; html+=1; html+="' onclick='chooseButton1(this)'>Choose</button>";
+                            html+="</div>";
+                        html+="</div>";
+                        html+="</td>";
+						columnCount = columnCount +1;
+
+
+
+                 } else if ((Brand === "" || data[a].brand === Brand)
+					&& (Model === "" || data[a].model === Model )
+					&& (Year === "" || data[a].caryear === Year )
+					&& (Style === "" || data[a].bodysytle === Style )
+					&& (Type === "" || data[a].fueltype === Type )
+					&& (Trans === "" || data[a].transmission === Trans )){
+                      
+					  count = count +1;
+					  
+					  
+
+<!--NEW CAR COLUMN-->
+                       html+=" <td width='50%'>";
+                         html+="<div class='carboxCompare'>";
+                            html+="<div class='carPicture' id='carPicture'>";
+                                html+=image;
+											
+
+                            html+="</div>";
+                            html+="<div class='carCriteriaCompare' id='carCriteria'>";
+                            html+="<table  class='comparePageCriteria'>";										
+                            html+="<tr height='20px'>";
+                                html+="<td width='50%'>";
+                                       html+=" <div class='title'><p>Brand</p></div>";
+                                html+="</td>";
+                                html+="<td width='50%'>";
+                                   html+="<div class='title'><p>Model</p></div>";
+                                html+="</td>";
+                            html+="</tr>";
+                            html+="<tr >";
+                                html+="<td>";
+                                    html+="<div class='brand' id='brand'>";
+                                        html+="<p>";
+											html+=columnCount-1; html+=2;
+											
+											html+="</p>";
+                                    html+="</div>";
+                                html+="</td>";
+                                html+="<td>";
+                                        html+="<div class='model' id='model'>";
+                                            html+="<p>";
+											html+=model;											
+											
+											html+="</p>";
+                                        html+="</div>";
+                                html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Year</p></div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Body Style</p></div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='year' id='year'>";
+                                            html+="<p>";
+											html+=caryear;
+											html+="</p>";
+                                        html+="</div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                            html+="<div class='bodyStyle' id='bodyStyle'>";
+                                                html+="<p>";
+												html+=bodysytle;
+											
+											html+="</p>";
+                                            html+="</div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Fuel Type</p></div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                        html+="<div class='title'><p>Transmission</p></div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="<tr>";
+                                    html+="<td>";
+                                        html+="<div class='fuelType' id='fuelType'>";
+                                            html+="<p>";
+											html+=fueltype;
+											html+="</p>";
+                                        html+="</div>";
+                                    html+="</td>";
+                                    html+="<td>";
+                                            html+="<div class='transmission' id='transmission'>";
+                                                html+="<p>";
+												html+=transmission;
+											html+="</p>";
+                                            html+="</div>";
+                                    html+="</td>";
+                            html+="</tr>";
+                            html+="</table>";
+                            html+="</div>";
+                            html+="<div class='buttonsBlock'>";
+                                html+="<button type='button' class='choose' id='choose"; html+=columnCount-1; html+=2;
+								html+="' onclick='chooseButton2(this)'>Choose</button>";
+                            html+="</div>";
+                        html+="</div>";
+                        html+="</td>";
+
+html+="</tr>";
+					
+          }
+         
+      }
+      
+        //iztiiram vecos datus
+		var Table = document.getElementById("data");
+		Table.innerHTML = "";
+		
+        document.getElementById("data").innerHTML += html;
+      }
+      
+  };
+		  
+  
+
+</script>
     </body>
     
 </html>

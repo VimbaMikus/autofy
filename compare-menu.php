@@ -6,6 +6,14 @@
 		$dbName = "autofy";
 
 		$conn =  mysqli_connect($servername, $username, $password, $dbName);
+		
+		//Šis priekš listboxiem
+		$sqlbrand=mysqli_query($conn, "select distinct brand from cars");
+		$sqlmodel=mysqli_query($conn, "select distinct model from cars");
+		$sqlbodystyle=mysqli_query($conn, "select distinct bodysytle from cars");
+		$sqlfueltype=mysqli_query($conn, "select distinct fueltype from cars");
+		$sqltrans=mysqli_query($conn, "select distinct transmission from cars");
+		$sqlyear=mysqli_query($conn, "select distinct caryear from cars");
 		?>
  <!DOCTYPE html>
 <html>
@@ -53,56 +61,88 @@
                     <h2>Choose criteria</h2>
                       <div class="compareCriteria">
                           <p>Brand</p>
-                            <select class="selectBoxCompare">
+						  <form method="post" action="datiComp.php">
+                            <select class="selectBoxCompare" name="brand" id = "brand">
                                     <option disabled selected value="">Choose your option</option>
-                                    <option value="Audi">Audi</option>
-                                    <option value="Volkswagen">Volkswagen</option>
-                                    <option value="Opel">Opel</option>
-                                    <option value="BMW">BMW</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlbrand))
+									{
+									?>
+				
+                                    <option value="<?=$row["brand"];?>"><?=$row["brand"];?></option>
+									<?php
+									}
+									?>
                             </select>
+							</form>
                             <p>Year</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2018">2018</option>
+                            <select class="selectBoxCompare" id = "year">
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlyear))
+									{
+									?>
+				
+                                    <option value="<?=$row["caryear"];?>"><?=$row["caryear"];?></option>
+									<?php
+									}
+									?>
                             </select>
                             <p>Body Style</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Cabriolet">Cabriolet</option>
-                                    <option value="Coupe">Coupe</option>
-                                    <option value="EstateCar">Estate Car</option>
-                                    <option value="SUV">SUV</option>
-                                    <option value="Saloon">Saloon</option>
-                                    <option value="Van">Van</option>
-                                    <option value="SmallCar">Small Car</option>
+                            <select class="selectBoxCompare" id = "style">
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlbodystyle))
+									{
+									?>
+				
+                                    <option value="<?=$row["bodysytle"];?>"><?=$row["bodysytle"];?></option>
+									<?php
+									}
+									?>
                             </select>
                             <p>Fuel Type</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Petrol">Petrol</option>
-                                    <option value="Diesel">Diesel</option>
-                                    <option value="LPG">LPG</option>
-                                    <option value="Hybrid">Hybrid</option>
-                                    <option value="Electric">Electric</option>
+                            <select class="selectBoxCompare" id = "type">
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlfueltype))
+									{
+									?>
+				
+                                    <option value="<?=$row["fueltype"];?>"><?=$row["fueltype"];?></option>
+									<?php
+									}
+									?>
                             </select>
                             <p>Transmission</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Manual">Manual gearbox</option>
-                                    <option value="Automatic">Automatic transmission</option>
+                            <select class="selectBoxCompare" id = "trans">
+									<option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqltrans))
+									{
+									?>
+				
+                                    <option value="<?=$row["transmission"];?>"><?=$row["transmission"];?></option>
+									<?php
+									}
+									?>
                             </select>
-                            <p>Color</p>
-                            <select class="selectBoxCompare">
-                                    <option disabled selected value="">Choose your option</option>
-                                    <option value="Red">Red</option>
-                                    <option value="Yellow">Yellow</option>
-                                    <option value="Blue">Blue</option>
-                                    <option value="Black">Black</option>
+                            <p>Model</p>
+                            <select class="selectBoxCompare" id = "model">
+                                     <option disabled selected value="">Choose your option</option>
+									<?php
+									while($row=mysqli_fetch_array($sqlmodel))
+									{
+									?>
+				
+                                    <option value="<?=$row["model"];?>"><?=$row["model"];?></option>
+									<?php
+									}
+									?>
                             </select>
                     </div>  
                     <div class="buttonBlockCompare">
-                        <button type="button" class="saveCriteria" onclick="window.location.href='compare.php'">Compare</button>
+                        <input type="submit" class="saveCriteria" name="insert" value="Compare" onclick="ApllyClick()"/>
                         <button type="button" class="addCar" onclick="window.location.href='compare-my-car.php'">Add your car</button>
                     </div>
     </td>
@@ -167,6 +207,37 @@
     </div>
     </div>
     <script src="autofyFunctions.js"></script>
+	<script>
+function ApllyClick() {
+if (document.getElementById("brand").value !== "") {
+localStorage.setItem("brand", document.getElementById("brand").value);
+} else { localStorage.setItem("brand",""); }
+if (document.getElementById("model").value !== "") {
+localStorage.setItem("model", document.getElementById("model").value);
+} else { localStorage.setItem("model",""); }
+if (document.getElementById("year").value !== "") {
+localStorage.setItem("year", document.getElementById("year").value);
+} else { localStorage.setItem("year",""); }
+if (document.getElementById("style").value !== "") {
+localStorage.setItem("style", document.getElementById("style").value);
+} else { localStorage.setItem("style",""); }
+if (document.getElementById("type").value !== "") {
+localStorage.setItem("type", document.getElementById("type").value);
+} else { localStorage.setItem("type",""); }
+if (document.getElementById("trans").value !== "") {
+localStorage.setItem("trans", document.getElementById("trans").value);
+} else { localStorage.setItem("trans",""); }
+
+if ((localStorage.getItem("brand") === "" )
+	&& (localStorage.getItem("model") === "")
+	&& (localStorage.getItem("year") === "")
+	&& (localStorage.getItem("style") === "")
+	&& (localStorage.getItem("type") === "")
+	&& (localStorage.getItem("trans") === "")) {
+		window.alert("Insert at least 1 filter value!");
+} else { window.location.href='compare.php'}
+}
+	</script>
     </body>
     
 </html>
