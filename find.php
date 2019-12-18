@@ -261,8 +261,12 @@ var count = 0;
               var fueltype = data[a].fueltype;
               var transmission = data[a].transmission;
 			  var image = data[a].image;
-			  if (image === null) {
-			  image = "<img src='/autofy/images/defaulteduards.png'>" }
+			  var details = "";
+			  if (image === null || "") {
+			  image = "<img src='/autofy/images/defaultcar.png'>" }
+			  
+			  if (brand === "Audi" ) {
+			  details = "https://www.audi.com/en.html" }
 			                   
                   if ((count%2 === 0) 
 					&& (SelectedBrand === "" || data[a].brand === SelectedBrand )
@@ -343,7 +347,8 @@ var count = 0;
                                      html+="</table>";
                          html+="</div>";
                           html+="<div class='buttonsBlock'>";
-                              html+="<button type='button' class='details'>Details</button>";
+                              html+="<button type='button' class='details' onClick = 'window.location.href = '";
+							  html+=details; html+="';'>Details</button>";
                           html+="</div>";
                       html+="</div>";
                       html+="</td>";
@@ -426,7 +431,8 @@ var count = 0;
                           html +="</table>";
                           html +="</div>";
                           html +="<div class='buttonsBlock'>"; 
-                              html +="<button type='button' class='details'>Details</button>";
+                              html+="<button type='button' class='details' onClick = 'window.location.href = '";
+							  html+=details; html+="';'>Details</button>";
                           html +="</div>";
                       html +="</div>";
                       html +="</td>";

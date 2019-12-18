@@ -88,12 +88,11 @@
                             
                             <p>Add car picture:</p>
                             <input type="file" name="fileToUpload" id="fileToUpload">
-							<input type="submit" value="Submit">
-                          </form>
                     </div>  
                     <div class="buttonBlockCompare">
-                        <button type="button" class="saveCriteria" onclick="window.location.href='compare.php'">Compare</button>
+                        <input type="submit" class="saveCriteria" value = "Compare">
                     </div>
+					</form>
     </td>
                     <tr>
     </table>

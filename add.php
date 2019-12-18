@@ -20,6 +20,7 @@ values ('$brand','$caryear', '$bodystyle' , '$type' , '$transmission' , '$model'
 
 if ($conn->query($sql)){
 echo "New record is inserted sucessfully";
+header("Location: http://localhost/autofy/compare.php");
 }
 else{
 echo "Error: ". $sql ."

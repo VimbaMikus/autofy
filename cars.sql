@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Dec 16, 2019 at 04:06 PM
+-- Generation Time: Dec 18, 2019 at 12:46 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.33
 
@@ -99,31 +99,7 @@ INSERT INTO `cars` (`pk_cars`, `brand`, `model`, `caryear`, `bodysytle`, `fuelty
 (53, 'Volvo', 'S90', 2019, 'Sedan', 'Petrol', 'Manual', '<img src=\'/autofy/images/Volvo_S90_2019_white_sedan.png\'>'),
 (54, 'Volvo', 'V60', 2018, 'Wagon', 'Petrol', 'Automatic', '<img src=\'/autofy/images/Volvo_V60_2019_grey_wagon.png\'>'),
 (55, 'Volvo', 'XC60', 2019, 'SUV', 'Diesel', 'Manual', '<img src=\'/autofy/images/Volvo_XC60_2019_black_offroad.png\'>'),
-(56, 'Volvo', 'XC90', 2018, 'SUV', 'Diesel', 'Automatic', '<img src=\'/autofy/images/Volvo_XC90_2019_white_offroad.png\'>'),
-(57, 'Testa', '', 2018, 'Cabriolet', 'Petrol', '', NULL),
-(58, 'Testa2', '', 2018, 'Coupe', 'Diesel', '', NULL),
-(59, 'Testa3', 'piemers3', 2222, 'Coupe', 'Petrol', '', NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `history`
---
-
-CREATE TABLE `history` (
-  `pk_history` int(5) DEFAULT NULL,
-  `pk_cars` int(5) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `history`
---
-
-INSERT INTO `history` (`pk_history`, `pk_cars`) VALUES
-(1, 5),
-(2, 3),
-(1, 5),
-(2, 3);
+(56, 'Volvo', 'XC90', 2018, 'SUV', 'Diesel', 'Automatic', '<img src=\'/autofy/images/Volvo_XC90_2019_white_offroad.png\'>');
 
 --
 -- Indexes for dumped tables

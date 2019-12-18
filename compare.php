@@ -141,6 +141,8 @@
               var fueltype = data[a].fueltype;
               var transmission = data[a].transmission;
 			  var image = data[a].image;
+			  if (image === null) {
+			  image = "<img src='/autofy/images/defaultcar.png'>" }
 
 			
 			       if ((count%2 === 0) 
@@ -173,7 +175,7 @@
                                 html+="<td>";
                                     html+="<div class='brand' id='brand'>";
                                         html+="<p>";
-										html+=columnCount; html+=1;
+										html+=brand;
 										html+="</p>";
                                     html+="</div>";
                                 html+="</td>";
@@ -278,7 +280,7 @@
                                 html+="<td>";
                                     html+="<div class='brand' id='brand'>";
                                         html+="<p>";
-											html+=columnCount-1; html+=2;
+											html+=brand;
 											
 											html+="</p>";
                                     html+="</div>";
